@@ -21,3 +21,31 @@ pwd — Print Working Directory
 pwd
 # Output: /home/username
 ```
+
+ls — List
+- What it stands for: List
+- What it does: Displays the names of files and folders contained within your current working directory.
+- Why use it: It lets you see what files and directories are available to interact with in your current location.
+- How to use it: 
+```bash
+ls
+# Output: Documents Downloads file.txt
+```
+
+ls -la — List All (Detailed)
+- What it stands for: List (with -l for Long format and -a for All files)
+- What it does: Lists every file and folder—including hidden files (those starting with a dot like .bashrc), along with detailed metadata such as permissions, ownership, file size, and last modified date.
+- Why use it: Use this when you need to view hidden configuration files or check file permissions and sizes.
+- How to use it: 
+```bash
+ls -la
+# Output: 
+# drwxr-xr-x  5 user user 4096 Jan 1 12:00 .
+# drwxr-xr-x 20 user user 4096 Jan 1 12:00 ..
+# -rw-r--r--  1 user user  220 Jan 1 12:00 .bashrc
+# drwxr-xr-x  2 user user 4096 Jan 1 12:00 Documents
+```
+
+Note: 
+- You can also use *ls -l* on its own for just the long format details without hidden files.
+- or you can use *ls -a* to see hidden files without the long format table.
