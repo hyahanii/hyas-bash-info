@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Bash_Logo_Colored.svg" alt="Bash Logo" width="120" height="120" style="background-color: white; padding: 10px; border-radius: 12px;">
+  <img src="https://cloud.githubusercontent.com/assets/2059754/24601246/753a7f36-1858-11e7-9d6b-7a0e64fb27f7.png" alt="Bash Logo" width="120" height="120">
 </p>
 
 # hyas-bash-info
