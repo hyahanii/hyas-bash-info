@@ -1,12 +1,12 @@
 # Essential Bash Commands
 
 ## 1. File And Directory Navigation
-- [`pwd`](#pwd-print-working-directory)       # Print working directory (shows where you are)
-- ls        # List files and folders in the current directory
-- ls -la    # List all files (including hidden ones) with detailed info
-- cd [dir]  # Change directory (e.g., cd /var/log)
-- cd ..     # Move up one directory level
-- cd ~      # Navigate straight to your user home directory
+- [`pwd`](#pwd-print-working-directory)         # Print working directory (shows where you are)
+- [`ls`](#ls-list)          # List files and folders in the current directory
+- [`ls -la`](#ls--la-list-all-detailed)      # List all files (including hidden ones) with detailed info
+- [`cd [dir]`](#cd-dir-change-directory)    # Change directory (e.g., cd /var/log)
+- [`cd ..`](#cd--move-up-one-level)     # Move up one directory level
+- [`cd ~`](#cd--go-to-home-directory)      # Navigate straight to your user home directory
 
 
 ## 1.5. File And Directory Navigation Definitions
