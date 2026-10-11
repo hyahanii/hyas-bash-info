@@ -9,6 +9,9 @@
 The main reason I made this is that finding actual information on exactly how things work is painful. This repo exists so you can actually
 understand what commands do, see clear examples, and either read them here or download them.
 
+> **Note:** Bash is specifically designed for Unix-like systems (Linux, macOS, WSL, etc.). If you are on Windows, use a Virtual Machine or WSL (Windows Subsystem for Linux).
+> This is **not** a complete beginner tutorial. You are expected to know basic concepts like what an IDE or text editor is. If you do not, just watch a YouTube video or something.
+> 
 
 ## Table of Contents
-- [01 - Basics](1.0-basics/Essential-Bash-Commands.md)
+- [1.0 - Basics](1.0-basics/Essential-Bash-Commands.md)
