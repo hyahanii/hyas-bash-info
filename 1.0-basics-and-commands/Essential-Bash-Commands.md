@@ -1,7 +1,7 @@
 # Essential Bash Commands
 
 ## 1. File And Directory Navigation
-- pwd       # Print working directory (shows where you are)
+- [`pwd`](#pwd-print-working-directory)       # Print working directory (shows where you are)
 - ls        # List files and folders in the current directory
 - ls -la    # List all files (including hidden ones) with detailed info
 - cd [dir]  # Change directory (e.g., cd /var/log)
