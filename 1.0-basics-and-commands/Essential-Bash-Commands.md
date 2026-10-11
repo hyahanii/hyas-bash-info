@@ -2,7 +2,20 @@
 
 ## Contents
 - [`1. File And Directory Navigation`](#1-file-and-directory-navigation)
+  - [`pwd`](#pwd-print-working-directory)
+  - [`ls`](#ls-list)
+  - [`ls -la`](#ls--la-list-all-detailed)
+  - [`cd [dir]`](#cd-dir-change-directory)
+  - [`cd ..`](#cd--move-up-one-level)
+  - [`cd ~`](#cd--go-to-home-directory)
 - [`2. File And Directory Manipulation`](#2-file-and-directory-manipulation)
+  - [`mkdir [dir]`](#mkdir-dir-make-directory)
+  - [`touch [file]`](#touch-file-touch)
+  - [`cp [source] [dest]`](#cp-source-dest-copy)
+  - [`mv [source] [dest]`](#mv-source-dest-move)
+  - [`rm [file]`](#rm-file-remove)
+
+
 
 ## 1. File And Directory Navigation
 - [`pwd`](#pwd-print-working-directory)         # Print working directory (shows where you are)
