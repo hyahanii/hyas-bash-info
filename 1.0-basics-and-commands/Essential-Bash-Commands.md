@@ -1,5 +1,8 @@
 # Essential Bash Commands
 
+#### Contents
+- [`1. File And Directory Navigation`](#1-file-and-directory-navigation)
+
 ## 1. File And Directory Navigation
 - [`pwd`](#pwd-print-working-directory)         # Print working directory (shows where you are)
 - [`ls`](#ls-list)          # List files and folders in the current directory
