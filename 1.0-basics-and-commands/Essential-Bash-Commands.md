@@ -11,7 +11,7 @@
 
 ## 1.5. File And Directory Navigation Definitions
 
-*pwd*: Print Working Directory
+### pwd: Print Working Directory
 - What it stands for: Print Working Directory
 - What it does: Prints the exact absolute file path of the directory you are currently in (e.g., /home/user/documents).
 - Why use it: When navigating in the terminal, it is easy to get lost. pwd tells you your exact current location in the filesystem.
@@ -22,7 +22,7 @@ pwd
 # Output: /home/username
 ```
 
-*ls*: List
+### ls: List
 - What it stands for: List
 - What it does: Displays the names of files and folders contained within your current working directory.
 - Why use it: It lets you see what files and directories are available to interact with in your current location.
@@ -32,7 +32,7 @@ ls
 # Output: Documents Downloads file.txt
 ```
 
-*ls -la*: List All (Detailed)
+### ls -la: List All (Detailed)
 - What it stands for: List (with -l for Long format and -a for All files)
 - What it does: Lists every file and folder—including hidden files (those starting with a dot like .bashrc), along with detailed metadata such as permissions, ownership, file size, and last modified date.
 - Why use it: Use this when you need to view hidden configuration files or check file permissions and sizes.
@@ -50,7 +50,7 @@ Note:
 - You can also use *ls -l* on its own for just the long format details without hidden files.
 - Or you can use *ls -a* to see hidden files without the long format table.
 
-*cd [dir]*: Change Directory
+### cd [dir]: Change Directory
 - What it stands for: Change Directory
 - What it does: Switches your current working directory to the target directory specified in [dir].
 - Why use it: Used to navigate into different folders within the filesystem.
@@ -63,7 +63,7 @@ pwd
 # Output: /home/username/Documents
 ```
 
-*cd ~*: Go To Home Directory
+### cd ~: Go To Home Directory
 - What it Stands for: Change Directory to Tilde (Home)
 - What it does: Instantly takes you to the user home directory (e.g., /home/username).
 - Why use it: The tilde symbol *~* is a built-in shortcut for your home directory. It provides a fast way to return home from anywhere in the filesystem. 
