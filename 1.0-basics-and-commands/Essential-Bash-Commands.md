@@ -301,3 +301,79 @@ Example:
 tail -n 20 server.log
 # Output: Prints the last 20 lines of server.log
 ```
+
+## 4. Searching And Filtering Files
+- [`grep [pattern] [file]`](#grep-pattern-file-global-regular-expression-print)        # Search for a specific pattern of text within files
+- [`find [dir] [criteria]`](#find-dir-criteria-find-files-and-directories)      # Search for files and directories across the filesystem
+- [`wc [file]`](#wc-file-word-count)                       # Count lines, words, and characters in a file
+- [`sort [file]`](#sort-file-sort-lines-of-text-files)                    # Sort lines of text files
+- [`uniq [file]`](#uniq-file-report-or-omit-repeated-lines)                # Report or omit repeated lines in a file
+- [`cut [file]`](#cut-file-remove-sections-from-each-line-of-files)                     # Remove or extract sections from each line of a file
+
+## 4.5. Searching And Filtering Files Definitions
+
+### grep [pattern] [file]: Global Regular Expression Print
+- What it stands for: Global Regular Expression Print
+- What it does: Searches for a specific pattern of text within a file and prints every line that contains a match.
+- Why use it: Its the fastest way to scan through large text files, configuration sheets, or logs to find specific words, terms, or error messages.
+- How to use it:
+```bash
+grep "apple" words.txt
+# Output: 
+# apple
+```
+
+- *grep -i* (Case-Insensitive Search): Ignores capitalization so it finds the search term whether it is lowercase, upperacase, or mixed
+Example:
+```bash
+grep -i "apple" words.txt
+# Output:
+# Apple
+# apple
+# APPLE
+```
+
+### find [dir] [criteria]: Find Files and Directories
+- What it stands for: 
+- What it does: 
+- Why use it: 
+- How to use it:
+```bash
+
+```
+
+### wc [file]: Word Count
+- What it stands for: 
+- What it does: 
+- Why use it: 
+- How to use it:
+```bash
+
+```
+
+### sort [file]: Sort Lines of Text Files
+- What it stands for: 
+- What it does: 
+- Why use it: 
+- How to use it:
+```bash
+
+```
+
+### uniq [file]: Report or Omit Repeated Lines
+- What it stands for: 
+- What it does: 
+- Why use it: 
+- How to use it:
+```bash
+
+```
+
+### cut [file]: Remove Sections from Each Line of Files
+- What it stands for: 
+- What it does: 
+- Why use it: 
+- How to use it:
+```bash
+
+```
