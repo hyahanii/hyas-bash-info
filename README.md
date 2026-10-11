@@ -11,4 +11,4 @@ understand what commands do, see clear examples, and either read them here or do
 
 
 ## Table of Contents
-- [01 - Basics](01-basics/01-Essential-Bash-Commands.md)
+- [01 - Basics](01 - basics/01-Essential-Bash-Commands.md)
