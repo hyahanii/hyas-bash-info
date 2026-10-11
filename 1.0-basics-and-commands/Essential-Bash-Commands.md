@@ -63,6 +63,19 @@ pwd
 # Output: /home/username/Documents
 ```
 
+### cd ..: Move Up One Level
+- What it stands for: Change Directory to Parent
+- What it does: Moves you up exactly one directory level in the system folder hierarchy.
+- Why use it: The ".." symbol represents the parent directory. It allows you to step backward out of your current folder without typing out a full path.
+- How to use it: 
+```bash
+pwd
+# Output: /home/username/Documents
+cd ..
+pwd
+# Output: /home/username
+```
+
 ### cd ~: Go To Home Directory
 - What it Stands for: Change Directory to Tilde (Home)
 - What it does: Instantly takes you to the user home directory (e.g., /home/username).
