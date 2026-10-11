@@ -10,10 +10,10 @@
   - [`cd ~`](#cd--go-to-home-directory)
 - [`2. File And Directory Manipulation`](#2-file-and-directory-manipulation)
   - [`mkdir [dir]`](#mkdir-dir-make-directory)
-  - [`touch [file]`](#touch-file-touch)
-  - [`cp [source] [dest]`](#cp-source-dest-copy)
-  - [`mv [source] [dest]`](#mv-source-dest-move)
-  - [`rm [file]`](#rm-file-remove)
+  - [`touch [file]`](#touch-file-touch-create-empty-file)
+  - [`cp [source] [dest]`](#cp-source-dest-copy-file-or-directory)
+  - [`mv [source] [dest]`](#mv-source-dest-move-or-rename-file-or-directory)
+  - [`rm [file]`](#rm-file-remove-file)
 
 
 
@@ -109,10 +109,10 @@ pwd
 
 ## 2. File And Directory Manipulation
 - [`mkdir [dir]`](#mkdir-dir-make-directory)        # Make directory (create a new folder)
-- [`touch [file]`](#touch-file-touch)      # Create a new, empty file (or update file timestamps)
-- [`cp [source] [dest]`](#cp-source-dest-copy) # Copy files or directories
-- [`mv [source] [dest]`](#mv-source-dest-move) # Move or rename files and directories
-- [`rm [file]`](#rm-file-remove)          # Remove (delete) files
+- [`touch [file]`](#touch-file-touch-create-empty-file)      # Create a new, empty file (or update file timestamps)
+- [`cp [source] [dest]`](#cp-source-dest-copy-file-or-directory) # Copy files or directories
+- [`mv [source] [dest]`](#mv-source-dest-move-or-rename-file-or-directory) # Move or rename files and directories
+- [`rm [file]`](#rm-file-remove-file)          # Remove (delete) files
 
 ## 2.5. File And Directory Manipulation Definitions
 
