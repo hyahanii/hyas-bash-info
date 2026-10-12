@@ -6,12 +6,14 @@
 
 > Clear, no-BS documentation and tutorial for Bash. Goes from basics -> more complex i guess.
 
-The main reason I made this is that finding actual information on exactly how things work is painful. This repo exists so you can actually
-understand what commands do, see clear examples, and either read them here or download them.
+The main reason I made this is that finding actual information on exactly how things work is painful. This repo exists so you can actually understand what commands do, see clear examples, and either read them here or download them.
 
 > **Note:** Bash is specifically designed for Unix-like systems (Linux, macOS, WSL, etc.). If you are on Windows, use a Virtual Machine or WSL (Windows Subsystem for Linux).
 > This is **not** a complete beginner tutorial. You are expected to know basic concepts like what an IDE or text editor is. If you do not, just watch a YouTube video or something.
-> 
+
+> This is designed for beginners. Most references just say a command exists. They do not explain what it does or how to use it in practice. This repo is for people who want quick, clear explanations and examples they can actually use.
+
+> This is actively being worked on, things are missing, more is coming soon.
 
 ## Table of Contents
 - [1.0 - Basics And Commands](1.0-basics-and-commands/Essential-Bash-Commands.md)
