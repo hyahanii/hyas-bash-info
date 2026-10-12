@@ -23,5 +23,11 @@ I mainly started this project for my own personal use, but decided to make it pu
 
 
 ## Table of Contents
-- [1.0 - Basics And Commands](1.0-basics-and-commands/Essential-Bash-Commands.md)
-- [1.0 - Operators](1.0-basics-and-commands/Operators.md)
+- [1.0 - Essential Bash Commands](1.0-basics-and-commands/Essential-Bash-Commands.md)
+- [2.0 - Operators](1.0-basics-and-commands/Operators.md)
+- [3.0 - Introduction to Programming in Bash](1.0-basics-and-commands/Introduction-To-Programming-In-Bash.md)
+
+## Project Structure
+- 1.0 Basics and Commands: core terminal commands and shell basics
+- 2.0 Operators: arithmetic, comparisons, logic, assignment, and shell operators
+- 3.0 Introduction to Programming in Bash: variables, input, conditionals, and basic script flow

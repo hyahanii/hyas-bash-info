@@ -35,6 +35,8 @@
 
 
 
+---
+
 ## 1. File And Directory Navigation
 - [`pwd`](#pwd-print-working-directory)         # Print working directory (shows where you are)
 - [`ls`](#ls-list)          # List files and folders in the current directory
@@ -43,6 +45,7 @@
 - [`cd ..`](#cd--move-up-one-level)     # Move up one directory level
 - [`cd ~`](#cd--go-to-home-directory)      # Navigate straight to your user home directory
 
+---
 
 ## 1.5. File And Directory Navigation Definitions
 
@@ -118,12 +121,7 @@ pwd
 
 Note: Typing just *cd* without any argumentsdoes the same exact thing.
 
-- How to use it: 
-```bash
-cd ~
-pwd
-# Output: /home/username
-```
+---
 
 ## 2. File And Directory Manipulation
 - [`mkdir [dir]`](#mkdir-dir-make-directory)        # Make directory (create a new folder)
@@ -131,6 +129,8 @@ pwd
 - [`cp [source] [dest]`](#cp-source-dest-copy-file-or-directory) # Copy files or directories
 - [`mv [source] [dest]`](#mv-source-dest-move-or-rename-file-or-directory) # Move or rename files and directories
 - [`rm [file]`](#rm-file-remove-file)          # Remove (delete) files
+
+---
 
 ## 2.5. File And Directory Manipulation Definitions
 
@@ -652,6 +652,36 @@ clear
 - *Ctrl + L* (Keyboard Shortcut): Clears the visible terminal screen without typing the command.
 
 Note: `clear` only clears what is visible; it does not delete command history or files.
+
+### echo
+- What it does: Prints text or values to the terminal output.
+- Why use it: Useful for displaying messages, testing commands, and showing variable values while debugging scripts.
+- How to use it:
+```bash
+echo "Hello, World!"
+# Output:
+# Hello, World!
+```
+
+- *echo $VAR* (Print a Variable): Displays the current value of a variable.
+Example:
+```bash
+name="Bash"
+echo $name
+# Output:
+# Bash
+```
+
+- *echo -e* (Enable Escape Sequences): Allows special characters like `\n` and `\t` to be interpreted.
+Example:
+```bash
+echo -e "Line 1\nLine 2"
+# Output:
+# Line 1
+# Line 2
+```
+
+Note: `echo` is one of the most basic debugging tools in Bash. It is often used to confirm that a script reached a certain point or to print variable values.
 
 ### which
 - What it does: Shows the file path of an executable command found in your `PATH`.

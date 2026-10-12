@@ -53,6 +53,8 @@
   - [`Input and Output Redirection`](#input-and-output-redirection)
   - [`Command Chaining`](#command-chaining)
 
+---
+
 ## How Operators and math work in bash
 
 ### Operators, operands, and values
@@ -167,7 +169,11 @@ printf 'hello\n' | wc -l && echo "Count complete"
 
 
 
+---
+
 ## 1. Common Programming Operators
+
+---
 
 ## 1.1 Arithmetic
 
@@ -327,6 +333,8 @@ echo "$((2 + 3, 4 + 5))"
 
 
 
+---
+
 ## 1.2 Comparison
 
 ### Equal to
@@ -430,6 +438,8 @@ fi
 Note: Bash's `[[ ... ]]` uses `<` and `>` for string ordering, but has no direct string `<=` or `>=` operators. Those comparisons can be written by combining a string-ordering test with `==`.
 
 
+---
+
 ## 1.3 Logical: AND, OR, NOT
 
 ### AND
@@ -471,6 +481,8 @@ fi
 # Output: The condition is false, so NOT makes it true
 ```
 
+---
+
 ## 1.4 Assignment
 
 ### basic assignment
@@ -503,6 +515,8 @@ echo "$count"
 ```
 
 Note: Compound arithmetic assignment is written inside `(( ... ))`; Bash uses integer arithmetic, so division discards any fractional part.
+
+---
 
 ## 2. Bash Specific Operators
 
