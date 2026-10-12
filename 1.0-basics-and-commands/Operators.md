@@ -530,16 +530,147 @@ fi
 Note: These operators compare integers, not floating-point numbers. For example, use `-eq` for numeric equality; use `==` inside `[[ ... ]]` when comparing strings.
 
 ### comparing strings
+Use these operators inside `[[ ... ]]` to compare string contents:
+
+- `==`: Equal to
+- `!=`: Not equal to
+- `<`: Comes before in lexicographic order
+- `>`: Comes after in lexicographic order
+
+**In Bash**
+```bash
+first="apple"
+second="banana"
+
+if [[ "$first" == "apple" ]]; then
+  echo "The strings are equal"
+fi
+# Output: The strings are equal
+
+if [[ "$first" != "$second" ]]; then
+  echo "The strings are different"
+fi
+# Output: The strings are different
+
+if [[ "$first" < "$second" ]]; then
+  echo "$first comes before $second"
+fi
+# Output: apple comes before banana
+```
+
+Note: These compare text, not numeric values. For example, `"10" < "2"` is true as a string comparison because the first character `1` comes before `2`. Use numeric operators such as `-lt` when comparing numbers.
 
 ### checking strings
+Use these tests inside `[[ ... ]]` to check whether a string is empty or contains text:
+
+- `-z`: True if the string has zero length (is empty).
+- `-n`: True if the string has non-zero length (is not empty).
+
+**In Bash**
+```bash
+name=""
+if [[ -z "$name" ]]; then
+  echo "The string is empty"
+fi
+# Output: The string is empty
+
+name="Alex"
+if [[ -n "$name" ]]; then
+  echo "The string is not empty"
+fi
+# Output: The string is not empty
+```
+
+Note: Quoting the variable expansion, as in `"$name"`, keeps the test reliable when the value contains spaces or is empty.
 
 ### checking files and directories
+Use these tests inside `[[ ... ]]` to check a path:
+
+- `-e`: The path exists.
+- `-f`: The path exists and is a regular file.
+- `-d`: The path exists and is a directory.
+- `-r`: The path is readable.
+- `-w`: The path is writable.
+- `-x`: The path is executable, or is a searchable directory.
+- `-s`: The path exists and is not empty.
+
+Put `!` before a test to check that it is false, such as `! -e` for a path that does not exist.
+
+**In Bash**
+```bash
+path="notes.txt"
+
+if [[ -e "$path" ]]; then
+  echo "The path exists"
+fi
+
+if [[ -f "$path" ]]; then
+  echo "It is a regular file"
+elif [[ -d "$path" ]]; then
+  echo "It is a directory"
+fi
+```
+
+Note: The example prints a message only when the corresponding test passes. Quote path variables so paths containing spaces are handled correctly.
 
 ### matching patterns
+Inside `[[ ... ]]`, `==` checks whether a string matches a shell pattern. `!=` checks whether it does not match. Common pattern characters include:
+
+- `*`: Matches any number of characters, including none.
+- `?`: Matches exactly one character.
+- `[abc]`: Matches one character from the listed characters. A range such as `[0-9]` matches one digit.
+
+**In Bash**
+```bash
+filename="report.txt"
+
+if [[ "$filename" == *.txt ]]; then
+  echo "This is a text file"
+fi
+# Output: This is a text file
+```
+
+Note: Quote the string being checked, but leave the pattern unquoted when you want its wildcard characters to work. Quoting the pattern makes those characters literal.
 
 ### matching regular expressions
+Inside `[[ ... ]]`, the `=~` operator checks whether a string matches a regular expression. Bash uses POSIX extended regular expression syntax.
+
+**In Bash**
+```bash
+value="abc123"
+
+if [[ "$value" =~ ^[[:alpha:]]+[[:digit:]]+$ ]]; then
+  echo "The value has letters followed by digits"
+fi
+# Output: The value has letters followed by digits
+```
+
+Here, `^` matches the start of the string, `$` matches the end, and `+` means one or more of the preceding character class. Anchoring the pattern this way requires the entire string to match.
+
+Note: Quote the string being checked, but leave the regular expression unquoted so its special characters keep their meaning.
 
 ### combining conditions
+Inside `[[ ... ]]`, combine tests to check more than one condition:
+
+- `&&` (AND): Both conditions must be true.
+- `||` (OR): At least one condition must be true.
+- `!` (NOT): Reverses the result of a condition.
+
+**In Bash**
+```bash
+age=30
+
+if [[ $age -ge 18 && $age -lt 65 ]]; then
+  echo "The age is between 18 and 64"
+fi
+# Output: The age is between 18 and 64
+
+if [[ $age -lt 18 || $age -ge 65 ]]; then
+  echo "The age is outside the range"
+fi
+```
+
+Note: Inside `[[ ... ]]`, `&&` and `||` combine conditions. Between commands, they instead control whether the next command runs; that use is covered under Command Chaining.
 
 ### arithmetic evaluation
 
