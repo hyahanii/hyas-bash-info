@@ -20,3 +20,4 @@ I mainly started this project for my own personal use, but decided to make it pu
 
 ## Table of Contents
 - [1.0 - Basics And Commands](1.0-basics-and-commands/Essential-Bash-Commands.md)
+- [1.0 - Operators](1.0-basics-and-commands/Operators.md)
