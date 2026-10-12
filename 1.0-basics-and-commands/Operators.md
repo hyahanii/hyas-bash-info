@@ -329,36 +329,205 @@ echo "$((2 + 3, 4 + 5))"
 
 ## 1.2 Comparison
 
-### equal to
+### Equal to
+An equality comparison checks whether two values are the same. In Bash, use `-eq` to compare numbers and `==` inside `[[ ... ]]` to compare strings.
 
-### not equal to
+**In math** `5 = 5`
 
-### less than
+**In Bash**
+```bash
+if [[ 5 -eq 5 ]]; then
+  echo "The numbers are equal"
+fi
+# Output: The numbers are equal
 
-### greater than
+if [[ "cat" == "cat" ]]; then
+  echo "The strings are equal"
+fi
+# Output: The strings are equal
+```
 
-### less than or equal to
+### Not equal to
+A not-equal comparison checks whether two values are different. In Bash, use `-ne` to compare numbers and `!=` inside `[[ ... ]]` to compare strings.
 
-### greater than or equal to
+**In math** `5 != 4`
+
+**In Bash**
+```bash
+if [[ 5 -ne 4 ]]; then
+  echo "The numbers are different"
+fi
+# Output: The numbers are different
+
+if [[ "cat" != "dog" ]]; then
+  echo "The strings are different"
+fi
+# Output: The strings are different
+```
+
+### Less than
+A less-than comparison checks whether the left value is smaller or comes before the right value. In Bash, use `-lt` to compare numbers and `<` inside `[[ ... ]]` to compare strings in lexicographic order.
+
+**In math** `3 < 5`
+
+**In Bash**
+```bash
+if [[ 3 -lt 5 ]]; then
+  echo "3 is less than 5"
+fi
+# Output: 3 is less than 5
+
+if [[ "apple" < "banana" ]]; then
+  echo "apple comes before banana"
+fi
+# Output: apple comes before banana
+```
+
+### Greater than
+A greater-than comparison checks whether the left value is larger than the right value. In Bash, use `-gt` for numbers and `>` inside `[[ ... ]]` for strings in lexicographic order.
+
+**In math** `8 > 5`
+
+**In Bash**
+```bash
+if [[ 8 -gt 5 ]]; then
+  echo "8 is greater than 5"
+fi
+# Output: 8 is greater than 5
+
+if [[ "banana" > "apple" ]]; then
+  echo "banana comes after apple"
+fi
+# Output: banana comes after apple
+```
+
+### Less than or equal to
+A less-than-or-equal comparison checks whether the left number is smaller than or equal to the right number. In Bash, use `-le` to compare numbers.
+
+**In math** `5 <= 5`; `3 <= 5`
+
+**In Bash**
+```bash
+if [[ 5 -le 5 ]]; then
+  echo "5 is less than or equal to 5"
+fi
+# Output: 5 is less than or equal to 5
+```
+
+### Greater than or equal to
+A greater-than-or-equal comparison checks whether the left number is larger than or equal to the right number. In Bash, use `-ge` to compare numbers.
+
+**In math** `5 >= 5`; `8 >= 5`
+
+**In Bash**
+```bash
+if [[ 8 -ge 5 ]]; then
+  echo "8 is greater than or equal to 5"
+fi
+# Output: 8 is greater than or equal to 5
+```
+
+Note: Bash's `[[ ... ]]` uses `<` and `>` for string ordering, but has no direct string `<=` or `>=` operators. Those comparisons can be written by combining a string-ordering test with `==`.
 
 
 ## 1.3 Logical: AND, OR, NOT
 
 ### AND
+Logical AND is true only when both conditions are true. In Bash conditional tests, use `&&`.
+
+**In logic** `true AND true = true`
+
+**In Bash**
+```bash
+if [[ 5 -gt 2 && 8 -gt 3 ]]; then
+  echo "Both conditions are true"
+fi
+# Output: Both conditions are true
+```
 
 ### OR
+Logical OR is true when at least one condition is true. In Bash conditional tests, use `||`.
+
+**In logic** `true OR false = true`
+
+**In Bash**
+```bash
+if [[ 5 -gt 2 || 8 -lt 3 ]]; then
+  echo "At least one condition is true"
+fi
+# Output: At least one condition is true
+```
 
 ### NOT
+Logical NOT reverses a condition: true becomes false, and false becomes true. In Bash conditional tests, use `!` before the condition.
+
+**In logic** `NOT false = true`
+
+**In Bash**
+```bash
+if [[ ! 5 -lt 2 ]]; then
+  echo "The condition is false, so NOT makes it true"
+fi
+# Output: The condition is false, so NOT makes it true
+```
 
 ## 1.4 Assignment
 
 ### basic assignment
+Basic assignment uses `=` to store a value in a variable. In Bash, do not put spaces around `=`.
+
+**In math** `x = 5`
+
+**In Bash**
+```bash
+name="Alex"
+echo "$name"
+# Output: Alex
+```
 
 ### compound assignment
+Compound assignment combines an arithmetic operation with assignment, updating a variable using its current value. Common operators are `+=`, `-=`, `*=`, `/=`, `%=`, and `**=`.
+
+**In math** If `count` is `5`, then `count += 3` makes it `8`.
+
+**In Bash**
+```bash
+count=5
+((count += 3))
+echo "$count"
+# Output: 8
+
+((count *= 2))
+echo "$count"
+# Output: 16
+```
+
+Note: Compound arithmetic assignment is written inside `(( ... ))`; Bash uses integer arithmetic, so division discards any fractional part.
 
 ## 2. Bash Specific Operators
 
 ### comparing numbers
+Use these operators inside `[[ ... ]]` to compare integer values:
+
+- `-eq`: Equal to
+- `-ne`: Not equal to
+- `-gt`: Greater than
+- `-lt`: Less than
+- `-ge`: Greater than or equal to
+- `-le`: Less than or equal to
+
+**In Bash**
+```bash
+first=5
+second=3
+
+if [[ $first -gt $second ]]; then
+  echo "$first is greater than $second"
+fi
+# Output: 5 is greater than 3
+```
+
+Note: These operators compare integers, not floating-point numbers. For example, use `-eq` for numeric equality; use `==` inside `[[ ... ]]` when comparing strings.
 
 ### comparing strings
 
