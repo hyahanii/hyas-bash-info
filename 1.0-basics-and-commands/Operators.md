@@ -673,9 +673,128 @@ fi
 Note: Inside `[[ ... ]]`, `&&` and `||` combine conditions. Between commands, they instead control whether the next command runs; that use is covered under Command Chaining.
 
 ### arithmetic evaluation
+Bash can evaluate arithmetic expressions directly using arithmetic expansion or arithmetic commands. This is useful for counters, calculations, and numeric checks without needing an external calculator.
+
+- `$(( expression ))`: Expands to the result of the arithmetic expression.
+- `(( expression ))`: Evaluates the arithmetic expression directly in Bash.
+
+**In Bash**
+```bash
+total=$((5 + 7))
+echo "$total"
+# Output: 12
+
+count=10
+((count *= 2))
+echo "$count"
+# Output: 20
+```
+
+You can also use arithmetic evaluation inside a condition:
+```bash
+if (( 8 > 3 )); then
+  echo "8 is greater than 3"
+fi
+# Output: 8 is greater than 3
+```
+
+Note: Bash arithmetic works mainly with integers. This means `echo "$((7 / 2))"` gives `3`, because the fractional part is discarded. For decimal math, use tools like `bc` or `awk`.
 
 ### Pipes
+A pipe, written as `|`, sends the output of one command into the input of another command. This lets you chain simple commands together to build more powerful workflows.
+
+- `command1 | command2`: Sends the standard output of `command1` to the standard input of `command2`.
+- Pipes are useful for filtering, counting, sorting, and processing data in stages.
+
+**In Bash**
+```bash
+printf 'one\ntwo\nthree\n' | wc -l
+# Output: 3
+```
+
+This example sends the text from `printf` into `wc -l`, which counts the number of lines.
+
+Another example:
+```bash
+ls /etc | head
+# Output: the first few entries from the /etc directory
+```
+
+Note: Pipes connect commands by passing output to input. They do not create files; they only move data from one command to another in memory.
 
 ### Input and Output Redirection
+Redirection changes where a command reads input from and where it sends output. This is one of the most important Bash features for working with files and pipelines.
+
+- `>`: Sends command output to a file, overwriting the file if it already exists.
+- `>>`: Appends output to the end of a file.
+- `<`: Reads input from a file instead of from the keyboard or another command.
+- `2>`: Sends error output to a file instead of the terminal.
+
+**In Bash**
+```bash
+echo "hello" > greeting.txt
+cat greeting.txt
+# Output: hello
+```
+
+Appending output:
+```bash
+echo "first line" > notes.txt
+echo "second line" >> notes.txt
+cat notes.txt
+# Output:
+# first line
+# second line
+```
+
+Reading input from a file:
+```bash
+wc -l < greeting.txt
+# Output: 1
+```
+
+Redirecting errors:
+```bash
+ls /nonexistentfolder 2> errors.txt
+cat errors.txt
+# Output: an error message from ls
+```
+
+Note: Redirection controls where data goes, while pipes control how data moves between commands. Use `>` when you want to overwrite a file and `>>` when you want to keep the existing content and add more.
 
 ### Command Chaining
+Command chaining lets you run multiple commands in one line. Bash decides when to run the next command based on the operator used.
+
+- `;`: Run the next command regardless of whether the previous one succeeded.
+- `&&`: Run the next command only if the previous command succeeded.
+- `||`: Run the next command only if the previous command failed.
+
+**In Bash**
+```bash
+echo "Start"; echo "Done"
+# Output:
+# Start
+# Done
+```
+
+Using `&&`:
+```bash
+mkdir demo && cd demo && pwd
+# Output: the path of the demo directory
+```
+
+Using `||`:
+```bash
+ls /missingfolder || echo "Folder not found"
+# Output: Folder not found
+```
+
+You can also combine chaining with other shell operators:
+```bash
+printf 'hello\n' | wc -c && echo "Count finished"
+# Output:
+# 6
+# Count finished
+```
+
+Note: `&&` is useful for safe command sequences, while `||` is useful for fallback behavior. `;` is the simplest form because it always runs the next command, even if the previous one failed.
