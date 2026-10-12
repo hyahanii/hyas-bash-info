@@ -30,10 +30,8 @@
   - [`man`](#man)
   - [`history`](#history)
   - [`clear`](#clear)
-  - [`echo`](#echo)
   - [`which`](#which)
   - [`command -v`](#command--v)
-  - [`sudo`](#sudo)
 
 
 
