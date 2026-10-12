@@ -157,10 +157,13 @@ mkdir -p projects/bash/scripts
 - Why use it: The fastest way to create a blank file (like a script or text file) without opening a full text editor.
 - How to use it: 
 ```bash
+ls
+# Output: projects
 touch script.sh
 ls
 # Output: projects script.sh
 touch words.txt
+ls
 # Output: projects script.sh words.txt
 ```
 
@@ -180,6 +183,8 @@ Example:
 ```bash
 cp -r projects/ backup_projects/
 ```
+
+Note: If the destination is an existing file, `cp` overwrites it without asking. Use `cp -i` to be prompted before overwriting. If the destination is an existing directory, the copied file is placed inside it.
 
 ### mv [source] [dest]: Move or Rename File or Directory
 - What it stands for: Move
