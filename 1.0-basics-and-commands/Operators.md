@@ -1,7 +1,8 @@
 # Operators
 
 ## Contents
-- [`How Operators and math work in bash`](#how-operators-and-math-work-in-bash)
+
+- [`How operators and math work in Bash`](#how-operators-and-math-work-in-bash)
   - [`Operators, operands, and values`](#operators-operands-and-values)
     - [`Operator`](#operator)
     - [`Operand`](#operand)
@@ -13,7 +14,7 @@
     - [`Arithmetic contexts`](#arithmetic-contexts)
     - [`Conditional tests`](#conditional-tests)
     - [`Shell command operators`](#shell-command-operators)
-- [`1. Common Programming Operators`](#1-common-programming-operators)
+- [`1. Common programming operators`](#1-common-programming-operators)
   - [`1.1 Arithmetic`](#11-arithmetic)
     - [`Addition`](#addition)
     - [`Subtraction (-)`](#subtraction)
@@ -40,7 +41,7 @@
   - [`1.4 Assignment`](#14-assignment)
     - [`Basic assignment`](#basic-assignment)
     - [`Compound assignment`](#compound-assignment)
-- [`2. Bash Specific Operators`](#2-bash-specific-operators)
+- [`2. Bash-specific operators`](#2-bash-specific-operators)
   - [`Comparing numbers`](#comparing-numbers)
   - [`Comparing strings`](#comparing-strings)
   - [`Checking strings`](#checking-strings)
@@ -53,9 +54,11 @@
   - [`Input and Output Redirection`](#input-and-output-redirection)
   - [`Command Chaining`](#command-chaining)
 
+This chapter explains how Bash operators work in different contexts and how they are used in real shell logic.
+
 ---
 
-## How Operators and math work in bash
+## How operators and math work in Bash
 
 ### Operators, operands, and values
 
@@ -518,7 +521,7 @@ Note: Compound arithmetic assignment is written inside `(( ... ))`; Bash uses in
 
 ---
 
-## 2. Bash Specific Operators
+## 2. Bash-Specific Operators
 
 ### comparing numbers
 Use these operators inside `[[ ... ]]` to compare integer values:

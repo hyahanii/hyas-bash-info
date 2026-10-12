@@ -1,14 +1,15 @@
 # Essential Bash Commands
 
 ## Contents
-- [`1. File And Directory Navigation`](#1-file-and-directory-navigation)
+
+- [`1. File and Directory Navigation`](#1-file-and-directory-navigation)
   - [`pwd`](#pwd-print-working-directory)
   - [`ls`](#ls-list)
   - [`ls -la`](#ls--la-list-all-detailed)
   - [`cd [dir]`](#cd-dir-change-directory)
   - [`cd ..`](#cd--move-up-one-level)
   - [`cd ~`](#cd--go-to-home-directory)
-- [`2. File And Directory Manipulation`](#2-file-and-directory-manipulation)
+- [`2. File and Directory Manipulation`](#2-file-and-directory-manipulation)
   - [`mkdir [dir]`](#mkdir-dir-make-directory)
   - [`touch [file]`](#touch-file-touch-create-empty-file)
   - [`cp [source] [dest]`](#cp-source-dest-copy-file-or-directory)
@@ -19,7 +20,7 @@
   - [`less [file]`](#less-file-interactive-file-viewer)
   - [`head [file]`](#head-file-display-beginning-of-file)
   - [`tail [file]`](#tail-file-display-end-of-file)
-- [`4. Searching And Filtering Files`](#4-searching-and-filtering-files)
+- [`4. Searching and Filtering Files`](#4-searching-and-filtering-files)
   - [`grep [pattern] [file]`](#grep-pattern-file-global-regular-expression-print)
   - [`find [dir] [criteria]`](#find-dir-criteria-find-files-and-directories)
   - [`wc [file]`](#wc-file-word-count)
@@ -33,21 +34,22 @@
   - [`which`](#which)
   - [`command -v`](#command--v)
 
-
-
----
-
-## 1. File And Directory Navigation
-- [`pwd`](#pwd-print-working-directory)         # Print working directory (shows where you are)
-- [`ls`](#ls-list)          # List files and folders in the current directory
-- [`ls -la`](#ls--la-list-all-detailed)      # List all files (including hidden ones) with detailed info
-- [`cd [dir]`](#cd-dir-change-directory)    # Change directory (e.g., cd /var/log)
-- [`cd ..`](#cd--move-up-one-level)     # Move up one directory level
-- [`cd ~`](#cd--go-to-home-directory)      # Navigate straight to your user home directory
+This chapter is a quick-reference guide to the most common Bash commands you will use while working in the terminal.
 
 ---
 
-## 1.5. File And Directory Navigation Definitions
+## 1. File and Directory Navigation
+
+- [`pwd`](#pwd-print-working-directory) # Print working directory (shows where you are)
+- [`ls`](#ls-list) # List files and folders in the current directory
+- [`ls -la`](#ls--la-list-all-detailed) # List all files, including hidden ones, with detailed info
+- [`cd [dir]`](#cd-dir-change-directory) # Change directory (for example, `cd /var/log`)
+- [`cd ..`](#cd--move-up-one-level) # Move up one directory level
+- [`cd ~`](#cd--go-to-home-directory) # Navigate to your home directory
+
+---
+
+## 1.5. File and Directory Navigation Definitions
 
 ### pwd: Print Working Directory
 - What it stands for: Print Working Directory
@@ -123,16 +125,17 @@ Note: Typing just *cd* without any arguments does the same exact thing.
 
 ---
 
-## 2. File And Directory Manipulation
-- [`mkdir [dir]`](#mkdir-dir-make-directory)        # Make directory (create a new folder)
-- [`touch [file]`](#touch-file-touch-create-empty-file)      # Create a new, empty file (or update file timestamps)
+## 2. File and Directory Manipulation
+
+- [`mkdir [dir]`](#mkdir-dir-make-directory) # Make a directory (create a new folder)
+- [`touch [file]`](#touch-file-touch-create-empty-file) # Create a new empty file or update timestamps
 - [`cp [source] [dest]`](#cp-source-dest-copy-file-or-directory) # Copy files or directories
 - [`mv [source] [dest]`](#mv-source-dest-move-or-rename-file-or-directory) # Move or rename files and directories
-- [`rm [file]`](#rm-file-remove-file)          # Remove (delete) files
+- [`rm [file]`](#rm-file-remove-file) # Remove a file
 
 ---
 
-## 2.5. File And Directory Manipulation Definitions
+## 2.5. File and Directory Manipulation Definitions
 
 ### mkdir [dir]: Make Directory
 - What it stands for: Make Directory
@@ -244,10 +247,13 @@ rm -ri old_folder/
 ```
 
 ## 3. Viewing/Reading Files
+
 - [`cat [file]`](#cat-file-concatenate-and-display)
 - [`less [file]`](#less-file-interactive-file-viewer)
 - [`head [file]`](#head-file-display-beginning-of-file)
 - [`tail [file]`](#tail-file-display-end-of-file)
+
+---
 
 ## 3.5. Viewing/Reading Files Definitions
 
@@ -324,15 +330,18 @@ tail -n 20 server.log
 # Output: Prints the last 20 lines of server.log
 ```
 
-## 4. Searching And Filtering Files
-- [`grep [pattern] [file]`](#grep-pattern-file-global-regular-expression-print)        # Search for a specific pattern of text within files
-- [`find [dir] [criteria]`](#find-dir-criteria-find-files-and-directories)      # Search for files and directories across the filesystem
-- [`wc [file]`](#wc-file-word-count)                       # Count lines, words, and characters in a file
-- [`sort [file]`](#sort-file-sort-lines-of-text-files)                    # Sort lines of text files
-- [`uniq [file]`](#uniq-file-report-or-omit-repeated-lines)                # Report or omit repeated lines in a file
-- [`cut [file]`](#cut-file-remove-sections-from-each-line-of-files)                     # Remove or extract sections from each line of a file
+## 4. Searching and Filtering Files
 
-## 4.5. Searching And Filtering Files Definitions
+- [`grep [pattern] [file]`](#grep-pattern-file-global-regular-expression-print) # Search for a pattern within files
+- [`find [dir] [criteria]`](#find-dir-criteria-find-files-and-directories) # Search for files and directories across the filesystem
+- [`wc [file]`](#wc-file-word-count) # Count lines, words, and characters in a file
+- [`sort [file]`](#sort-file-sort-lines-of-text-files) # Sort lines of text files
+- [`uniq [file]`](#uniq-file-report-or-omit-repeated-lines) # Report or omit repeated lines in a file
+- [`cut [file]`](#cut-file-remove-sections-from-each-line-of-files) # Remove or extract sections from each line of a file
+
+---
+
+## 4.5. Searching and Filtering Files Definitions
 
 ### grep [pattern] [file]: Global Regular Expression Print
 - What it stands for: Global Regular Expression Print
@@ -575,6 +584,7 @@ cut -d ':' -f 1,3 /etc/passwd
 Note: `cut` is great for grabbing a single column from structured data. If your file is tab-separated, use `-d '\t'` for the delimiter, and if your file is comma-separated, use `-d ','`.
 
 ## 5. Useful Terminal Commands
+
 - [`man`](#man)
 - [`history`](#history)
 - [`clear`](#clear)
@@ -582,6 +592,8 @@ Note: `cut` is great for grabbing a single column from structured data. If your 
 - [`which`](#which)
 - [`command -v`](#command--v)
 - [`sudo`](#sudo)
+
+---
 
 ## 5.5 Useful Terminal Commands Definitions
 
