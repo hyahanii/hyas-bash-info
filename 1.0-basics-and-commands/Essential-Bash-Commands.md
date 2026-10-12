@@ -115,11 +115,11 @@ pwd
 ```
 
 ### cd ~: Go To Home Directory
-- What it Stands for: Change Directory to Tilde (Home)
+- What it stands for: Change Directory to Tilde (Home)
 - What it does: Instantly takes you to the user home directory (e.g., /home/username).
-- Why use it: The tilde symbol *~* is a built-in shortcut for your home directory. It provides a fast way to return home from anywhere in the filesystem. 
+- Why use it: The tilde symbol *~* is a built-in shortcut for your home directory. It provides a fast way to return home from anywhere in the filesystem.
 
-Note: Typing just *cd* without any argumentsdoes the same exact thing.
+Note: Typing just *cd* without any arguments does the same exact thing.
 
 ---
 
@@ -145,7 +145,7 @@ ls
 # Output: Documents Downloads projects
 ```
 
-- *mkdir -p* (Make Parent Directories): Creates nested directories all at once if they dont already exist.
+- *mkdir -p* (Make Parent Directories): Creates nested directories all at once if they don't already exist.
 Example:
 ```bash
 mkdir -p projects/bash/scripts
@@ -209,7 +209,7 @@ mv -i script.sh backup.sh
 ### rm [file]: Remove File
 - What it stands for: Remove
 - What it does: Permanently deletes the specified file from the filesystem. 
-- (Note: Unlike a graphical desktop, the terminal does not have a recycle bin or trash folder files deleted with `rm` are gone instantly).
+- (Note: Unlike a graphical desktop, the terminal does not have a recycle bin or trash folder; files deleted with `rm` are gone instantly.)
 - Why use it: Used to clean up old, temporary, or unneeded files.
 - How to use it: 
 ```bash
@@ -254,7 +254,7 @@ rm -ri old_folder/
 ### cat [file]: Concatenate and Display
 - What it stands for: Concatenate
 - What it does: Reads a file and prints its entire content directly into the terminal window.
-- Why use it: The quickest way to view short text files without leaving yur command line prompt.
+- Why use it: The quickest way to view short text files without leaving your command line prompt.
 - How to use it:
 ```bash
 cat words.txt
@@ -337,7 +337,7 @@ tail -n 20 server.log
 ### grep [pattern] [file]: Global Regular Expression Print
 - What it stands for: Global Regular Expression Print
 - What it does: Searches for a specific pattern of text within a file and prints every line that contains a match.
-- Why use it: Its the fastest way to scan through large text files, configuration sheets, or logs to find specific words, terms, or error messages.
+- Why use it: It's the fastest way to scan through large text files, configuration sheets, or logs to find specific words, terms, or error messages.
 - How to use it:
 ```bash
 grep "apple" words.txt
@@ -345,7 +345,7 @@ grep "apple" words.txt
 # apple
 ```
 
-- *grep -i* (Case-Insensitive Search): Ignores capitalization so it finds the search term whether it is lowercase, upperacase, or mixed
+- *grep -i* (Case-Insensitive Search): Ignores capitalization so it finds the search term whether it is lowercase, uppercase, or mixed.
 Example:
 ```bash
 grep -i "apple" words.txt
@@ -391,12 +391,12 @@ find /home/user -size +100M
 ```
 
 - *find [dir] -iname "pattern"* (Case Insensitive Name Search): Same as *-name*, but ignores uppercase/lowercase differences.
-Example
+Example:
 ```bash
 find . -iname "*.TXT"
 ```
 
-Note: *.* means "current directory", so *find .* searches from wherever you are right now
+Note: *.* means "current directory", so *find .* searches from wherever you are right now.
 
 
 ### wc [file]: Word Count
