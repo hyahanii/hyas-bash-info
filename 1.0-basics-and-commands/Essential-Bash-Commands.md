@@ -195,6 +195,8 @@ ls
 - *mv -i* (Interactive Move/Rename): Prompts you for confirmation before overwriting an existing file, preventing accidental data loss.
 Example:
 ```bash
+ls
+# Output: projects backup.sh new_script.sh words.txt
 mv -i script.sh backup.sh
 # Output: overwrite 'backup.sh'? (y/n)
 ```
