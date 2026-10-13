@@ -15,7 +15,12 @@ I mainly started this project for my own personal use, but decided to make it pu
 
 **Feedback and issue reports**: If you spot an error or have a suggestion, please open a GitHub Issue. This is a personal project, so I may not accept outside contributions or be able to respond to every report. You can also contact me on Discord at @hyahanii or by email at hyahaniii@gmail.com
 
-## Table of Contents
-- [1.0 - Essential Bash Commands](1.0-basics-and-commands/Essential-Bash-Commands.md)
-- [2.0 - Operators](1.0-basics-and-commands/Operators.md)
-- [3.0 - Bash Scripting Basics](1.0-basics-and-commands/Bash-Scripting-Basics.md)
+## 1.0 - Basics and Commands
+- [Essential Bash Commands](1.0-basics-and-commands/Essential-Bash-Commands.md)
+- [Operators](1.0-basics-and-commands/Operators.md)
+- [Bash Scripting Basics](1.0-basics-and-commands/Bash-Scripting-Basics.md)
+- [Bash Arrays and String Handling](1.0-basics-and-commands/Bash-Arrays-and-String-Handling.md)
+- [Terminal Shortcuts and Controls](1.0-basics-and-commands/Terminal-Shortcuts-and-Controls.md)
+
+## 2.0 - Intermediate Bash
+- [Intermediate Bash](2.0-intermediate-bash/README.md)

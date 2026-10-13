@@ -31,6 +31,7 @@
   - [`man`](#man)
   - [`history`](#history)
   - [`clear`](#clear)
+  - [`echo`](#echo)
   - [`which`](#which)
   - [`command -v`](#command--v)
 
@@ -591,7 +592,6 @@ Note: `cut` is great for grabbing a single column from structured data. If your 
 - [`echo`](#echo)
 - [`which`](#which)
 - [`command -v`](#command--v)
-- [`sudo`](#sudo)
 
 ---
 

@@ -15,7 +15,6 @@
 - [`Script arguments`](#script-arguments)
 - [`Quoting`](#quoting)
 - [`Exit status`](#exit-status)
-- [`Your first Bash script`](#your-first-bash-script)
 - [`Basic control flow`](#basic-control-flow)
   - [`If statements`](#if-statements)
   - [`If-else statements`](#if-else-statements)
