@@ -22,6 +22,10 @@ I mainly started this project for my own personal use, but decided to make it pu
 - [`4 Searching and Filtering`](1.0-terminal-basics/4-searching-and-filtering.md)
 - [`5 Terminal Utilities`](1.0-terminal-basics/5-terminal-utilities.md)
 
-## 2.0 - ???
+## 2.0 - Terminal Shortcuts
+- [`Terminal Shortcuts`](2.0-terminal-shortcuts/Terminal-Shortcuts-and-Controls.md)
 
-## 3.0 - ???
+## 3.0 - Operators and Bash Specific Operators
+- [`1.0 Basics`](3.0-operators-and-bash-specific-operators/1.0-basics.md)
+- [`2.0 Common Programming Operators`](3.0-operators-and-bash-specific-operators/2.0-common-programming-operators.md)
+- [`3.0 Bash Specific Operators`](3.0-operators-and-bash-specific-operators/3.0-bash-specific-operators.md)
