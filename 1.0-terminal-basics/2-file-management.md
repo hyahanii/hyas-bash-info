@@ -2,11 +2,11 @@
 
 ## Contents
 
-- [mkdir](#mkdir)
-- [touch](#touch)
-- [cp](#cp)
-- [mv](#mv)
-- [rm](#rm)
+- [`mkdir`](#mkdir)
+- [`touch`](#touch)
+- [`cp`](#cp)
+- [`mv`](#mv)
+- [`rm`](#rm)
 
 ## File and directory commands
 

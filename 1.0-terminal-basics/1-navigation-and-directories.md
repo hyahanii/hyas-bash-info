@@ -2,12 +2,12 @@
 
 ## Contents
 
-- [pwd](#pwd)
-- [ls](#ls)
-- [ls -la](#detailed-listing)
-- [cd](#change-directory)
-- [cd ..](#parent-directory)
-- [cd ~](#home-directory)
+- [`pwd`](#pwd)
+- [`ls`](#ls)
+- [`ls -la`](#detailed-listing)
+- [`cd`](#change-directory)
+- [`cd ..`](#parent-directory)
+- [`cd ~`](#home-directory)
 
 ## Navigation commands
 

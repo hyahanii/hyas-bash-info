@@ -16,11 +16,12 @@ I mainly started this project for my own personal use, but decided to make it pu
 **Feedback and issue reports**: If you spot an error or have a suggestion, please open a GitHub Issue. This is a personal project, so I may not accept outside contributions or be able to respond to every report. You can also contact me on Discord at @hyahanii or by email at hyahaniii@gmail.com
 
 ## 1.0 - Terminal Basics
-- [1 Navigation and Directories](1.0-terminal-basics/1-navigation-and-directories.md)
-- [2 File Management](1.0-terminal-basics/2-file-management.md)
-- [3 Reading Files](1.0-terminal-basics/3-reading-files.md)
-- [4 Searching and Filtering](1.0-terminal-basics/4-searching-and-filtering.md)
-- [5 Terminal Utilities](1.0-terminal-basics/5-terminal-utilities.md)
+- [`1 Navigation and Directories`](1.0-terminal-basics/1-navigation-and-directories.md)
+- [`2 File Management`](1.0-terminal-basics/2-file-management.md)
+- [`3 Reading Files`](1.0-terminal-basics/3-reading-files.md)
+- [`4 Searching and Filtering`](1.0-terminal-basics/4-searching-and-filtering.md)
+- [`5 Terminal Utilities`](1.0-terminal-basics/5-terminal-utilities.md)
+
 ## 2.0 - ???
 
 ## 3.0 - ???

@@ -2,12 +2,12 @@
 
 ## Contents
 
-- [grep](#grep)
-- [find](#find)
-- [wc](#wc)
-- [sort](#sort)
-- [uniq](#uniq)
-- [cut](#cut)
+- [`grep`](#grep)
+- [`find`](#find)
+- [`wc`](#wc)
+- [`sort`](#sort)
+- [`uniq`](#uniq)
+- [`cut`](#cut)
 
 ## Searching and filtering commands
 
