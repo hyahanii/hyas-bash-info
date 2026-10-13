@@ -31,12 +31,9 @@ This chapter introduces the basic building blocks of Bash programming. It is mea
 
 ## What a Bash script is
 
-- What is a Bash script? 
-  A Bash script is a plain text file that contains a series of Bash commands. When you run the script, the shell reads the file line by line and executes each command in order.
-- Why it matters: 
-  Scripts help automate repetitive tasks, save time, and let you build simple tools without manually typing the same commands over and over.
-- Practical use: 
-  You can use Bash scripts to create folders, move files, check system status, back up data, or automate setup steps.
+- What is a Bash script?: A Bash script is a plain text file that contains a series of Bash commands. When you run the script, the shell reads the file line by line and executes each command in order.
+- Why it matters: Scripts help automate repetitive tasks, save time, and let you build simple tools without manually typing the same commands over and over.
+- Practical use: You can use Bash scripts to create folders, move files, check system status, back up data, or automate setup steps.
 - Example layout:
 
 ```bash
@@ -82,18 +79,31 @@ This script runs in order: it prints a message, creates a folder, moves into it,
 echo "Hello from Bash!"
 ```
 
+`#!/bin/bash` tells the system to run Bash from the specific path `/bin/bash`. `#!/usr/bin/env bash` runs `env`, which searches your `PATH` for Bash and uses the first match. The `env` version works on systems where Bash is installed in a different location; the fixed path is direct but assumes Bash is at `/bin/bash`.
+
 ### Making a script executable
 
-- What it does: Making a script executable means giving it permission to run as a program.
-- Why it matters: If a script is not executable, you can still run it with `bash script.sh`, but you cannot run it directly with `./script.sh`.
-- Practical use: This is useful when you want to share scripts or run them like commands from the terminal.
-- Note: `chmod` is short for “change mode,” and it changes file permissions. The `+x` part means “add execute permission,” which allows the file to be run as a program. The `./` before a filename means “run this file from the current directory.” So `./script.sh` tells the shell to execute the script in the current directory.
-- Example layout:
+- What it does: A script is a text file, and the executable permission lets the system launch it directly as a program.
+- Running without execute permission: You can still run a readable script by passing it to Bash with `bash script.sh`. Bash reads the file and runs its commands, so the script itself does not need execute permission for this form. If you try `./script.sh` without execute permission, the system refuses to launch it and usually prints `Permission denied`.
+
+- What `chmod +x` means: `chmod` means “change mode” and is the command used to change file permissions. In `+x`, `+` means “add” and `x` means “execute.” So `chmod +x script.sh` adds execute permission to the script; it does not change the script's contents. With no user class specified, `chmod` applies the change to the owner, group, and other users, subject to the system's permission rules.
+
+- Practical use: Add execute permission when you want to launch the script directly, share it as an executable script, or run it like a command.
+- Note: The `./` means “run the file named `script.sh` from the current directory.” It is needed because the current directory is not usually searched for commands automatically. When launched directly, the system uses the script's shebang to choose the interpreter.
+- Example:
 
 ```bash
+ls -l script.sh
+# Example: -rw-r--r-- ... script.sh
+bash script.sh
+
 chmod +x script.sh
+ls -l script.sh
+# Example: -rwxr-xr-x ... script.sh
 ./script.sh
 ```
+
+In the permission listing, adding `x` marks the file as executable. The letters before `+` can limit who gets that permission: `u` means the owner, `g` means the group, and `o` means other users. For example, `chmod u+x script.sh` adds execute permission only for the owner.
 
 ---
 
@@ -135,6 +145,7 @@ mkdir -p "$folder"
 ```
 
 ### Basic assignment
+For more information check [`1.4 Assignment`](Operators.md#14-assignment).
 
 - What it is: Basic assignment is when you give a variable a value using `=`.
 - Why it matters: Assignment lets the script remember information for later use.
@@ -177,15 +188,37 @@ echo "Hello, $name!"
 
 ### read
 
-- What it is: `read` reads a line of input from the terminal and stores it in a variable.
-- Why it matters: It is one of the simplest ways to make a script interactive.
-- Practical use: You can use it to collect values from the user before running a command.
-- Example layout:
+- What it does: `read` waits for input, then stores it in a variable. By default, it reads until the user presses Enter.
+- Basic syntax: `read [options] variable_name`. If you give `read` multiple variable names, it assigns input words to them in order; any remaining text goes into the last variable.
+- `-p "prompt"`: Displays a prompt before waiting for input. The prompt does not add a newline.
 
 ```bash
-read -p "Type a number: " number
+read -r -p "Type a number: " number
 echo "You entered: $number"
 ```
+
+Common options:
+
+- `-r`: Reads backslashes literally instead of treating them as escape characters. This is usually the option to use for ordinary text input.
+- `-p "prompt"`: Prints a prompt before reading input.
+- `-s`: Hides the characters as they are typed, useful for password input. Print a newline afterward with `printf '\n'` if needed.
+- `-n number`: Stops after reading the specified number of characters instead of waiting for Enter.
+- `-t seconds`: Stops waiting after the specified number of seconds. `read` returns a non-zero status if it times out.
+- `-a array_name`: Splits the input into words and stores them as elements of an indexed array.
+
+Examples:
+
+```bash
+read -r -p "Enter a path: " path
+read -r -s -p "Enter a password: " password
+printf '\n'
+read -r -n 1 -p "Continue? (y/n) " answer
+printf '\n'
+read -r -t 5 -p "You have 5 seconds: " response
+read -r -a items -p "Enter some words: "
+```
+
+Use `read -r` for normal text input unless you specifically need backslashes to be interpreted. For more details, check `help read` in Bash.
 
 ---
 
@@ -211,21 +244,29 @@ If you run:
 
 Then `$1` becomes `Alice`, and `$#` becomes `1`.
 
-### $1, $2, $@, and $#
+### $1, $2, $@, and $# etc
 
-- What it is: `$1` is the first argument, `$2` is the second argument, `$@` contains all arguments, and `$#` tells you how many arguments were passed.
+- Positional parameters: `$1` through `$9` refer to the first nine arguments passed to the script. For a parameter with two or more digits, wrap the number in braces: `${10}`, `${11}`, and so on. Without braces, `$10` means `$1` followed by the character `0`, not the tenth argument.
+- Other useful parameters: `$@` expands to all arguments, and `$#` gives the number of arguments passed.
+- `$0` contains the name or path used to run the script.
+- `"$*"` combines all arguments into one word, separated by the first character of `IFS` (a space by default).
+- `shift` removes the first positional parameter: `$2` becomes `$1`, `$3` becomes `$2`, and `$#` decreases by one.
 - Why it matters: These variables let your script access the values the user passed in and react to them.
 - Practical use: You can build scripts that work with any file name, user name, or folder path.
-- Example layout:
+- Example:
 
 ```bash
 #!/usr/bin/env bash
 
 echo "First argument: $1"
 echo "Second argument: $2"
-echo "All arguments: $@"
+echo "Ninth argument: $9"
+echo "Tenth argument: ${10}"
+printf 'All arguments: <%s>\n' "$@"
 echo "Total arguments: $#"
 ```
+
+Run it with ten arguments, for example `./script.sh one two three four five six seven eight nine ten`. In this example, `$9` is `nine` and `${10}` is `ten`. Quote `"$@"` when passing all arguments to another command; this preserves each argument as a separate value, including arguments that contain spaces.
 
 ---
 

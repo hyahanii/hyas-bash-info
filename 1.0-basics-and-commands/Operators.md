@@ -489,15 +489,24 @@ fi
 ## 1.4 Assignment
 
 ### basic assignment
-Basic assignment uses `=` to store a value in a variable. In Bash, do not put spaces around `=`.
+Basic assignment uses `=` to store a value in a variable. Keep the variable name, `=`, and value together with no spaces around `=`. Bash uses spaces to separate commands and arguments, so `name = "Alex"` is not an assignment: Bash treats `name` as a command and `=` and `"Alex"` as arguments to it.
 
 **In math** `x = 5`
 
 **In Bash**
 ```bash
 name="Alex"
+count=10
+project="demo project"
 echo "$name"
 # Output: Alex
+```
+
+Spaces inside the value are fine when the value is quoted, as in `project="demo project"`. The quotes keep it as one value; they do not make spaces around `=` valid.
+
+```bash
+name = "Alex"  # Wrong: Bash treats `name` as a command
+name="Alex"    # Correct assignment
 ```
 
 ### compound assignment
