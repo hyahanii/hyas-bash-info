@@ -2,11 +2,11 @@
 
 ## Contents
 
-- [`mkdir`](#mkdir)
-- [`touch`](#touch)
-- [`cp`](#cp)
-- [`mv`](#mv)
-- [`rm`](#rm)
+- [`mkdir`](#mkdir-dir-make-directory)
+- [`touch`](#touch-file-touch-create-empty-file)
+- [`cp`](#cp-source-dest-copy-file-or-directory)
+- [`mv`](#mv-source-dest-move-or-rename-file-or-directory)
+- [`rm`](#rm-file-remove-file)
 
 ## File and directory commands
 

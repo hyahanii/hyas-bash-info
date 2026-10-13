@@ -2,12 +2,12 @@
 
 ## Contents
 
-- [`grep`](#grep)
-- [`find`](#find)
-- [`wc`](#wc)
-- [`sort`](#sort)
-- [`uniq`](#uniq)
-- [`cut`](#cut)
+- [`grep`](#grep-pattern-file-global-regular-expression-print)
+- [`find`](#find-dir-criteria-find-files-and-directories)
+- [`wc`](#wc-file-word-count)
+- [`sort`](#sort-file-sort-lines-of-text-files)
+- [`uniq`](#uniq-file-report-or-omit-repeated-lines)
+- [`cut`](#cut-file-remove-sections-from-each-line-of-files)
 
 ## Searching and filtering commands
 

@@ -2,10 +2,10 @@
 
 ## Contents
 
-- [`cat`](#cat)
-- [`less`](#less)
-- [`head`](#head)
-- [`tail`](#tail)
+- [`cat`](#cat-file-concatenate-and-display)
+- [`less`](#less-file-interactive-file-viewer)
+- [`head`](#head-file-display-beginning-of-file)
+- [`tail`](#tail-file-display-end-of-file)
 
 ## File-reading commands
 
