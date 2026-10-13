@@ -1,4 +1,4 @@
-# 3.0 - Introduction to Programming in Bash
+# 3.0 - Bash Scripting Basics
 
 ## Contents
 

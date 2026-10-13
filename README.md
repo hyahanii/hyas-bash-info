@@ -4,33 +4,18 @@
 
 # hyas-bash-info
 
-> Clear, no-BS documentation and tutorial for Bash. Goes from basics -> more complex i guess.
-
-
-
-> **Note:** Bash is specifically designed for Unix-like systems (Linux, macOS, WSL, etc.). If you are on Windows, use a Virtual Machine or WSL (Windows Subsystem for Linux).
-> You are expected to know very basics, like what an IDE is or text editor is and or how to use a keyboard. If you do not, just watch a YouTube video or something.
+> Clear, no-BS documentation for Bash. Goes from basics -> more complex i guess.
 
 > This is designed for beginners. Most references just say a command exists. They do not explain what it does or how to use it in practice. This repo is for people who want quick, clear explanations and examples they can actually use.
 
 > This is actively being worked on, things are missing, more is coming soon.
 
-The main reason I made this is that finding actual information on exactly how things work is painful. This repo exists so you can actually understand what commands do, see clear examples, and either read them here or download them.
+The main reason I made this is that finding actual information on exactly how things work is painful. This repo exists so you can actually understand what commands do, see clear examples.
 I mainly started this project for my own personal use, but decided to make it public
 
 **Feedback and issue reports**: If you spot an error or have a suggestion, please open a GitHub Issue. This is a personal project, so I may not accept outside contributions or be able to respond to every report. You can also contact me on Discord at @hyahanii or by email at hyahaniii@gmail.com
 
-## Tutorials
-- [Tutorials](1.0-basics-and-commands/tutorial.md)
-
 ## Table of Contents
 - [1.0 - Essential Bash Commands](1.0-basics-and-commands/Essential-Bash-Commands.md)
 - [2.0 - Operators](1.0-basics-and-commands/Operators.md)
-- [3.0 - Introduction to Programming in Bash](1.0-basics-and-commands/Introduction-To-Programming-In-Bash.md)
-
-
-
-## Project Structure
-- 1.0 Basics and Commands: core terminal commands and shell basics
-- 2.0 Operators: arithmetic, comparisons, logic, assignment, and shell operators
-- 3.0 Introduction to Programming in Bash: variables, input, conditionals, and basic script flow
+- [3.0 - Bash Scripting Basics](1.0-basics-and-commands/Bash-Scripting-Basics.md)
