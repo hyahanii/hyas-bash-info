@@ -31,9 +31,12 @@ This chapter introduces the basic building blocks of Bash programming. It is mea
 
 ## What a Bash script is
 
-- What is a Bash script? A Bash script is a plain text file that contains a series of Bash commands. When you run the script, the shell reads the file line by line and executes each command in order.
-- Why it matters: Scripts help automate repetitive tasks, save time, and let you build simple tools without manually typing the same commands over and over.
-- Practical use: You can use Bash scripts to create folders, move files, check system status, back up data, or automate setup steps.
+- What is a Bash script? 
+  A Bash script is a plain text file that contains a series of Bash commands. When you run the script, the shell reads the file line by line and executes each command in order.
+- Why it matters: 
+  Scripts help automate repetitive tasks, save time, and let you build simple tools without manually typing the same commands over and over.
+- Practical use: 
+  You can use Bash scripts to create folders, move files, check system status, back up data, or automate setup steps.
 - Example layout:
 
 ```bash
