@@ -273,31 +273,140 @@ echo "$result"
 ## Comparison
 
 ### Equal to
+- Meaning: Checking if two numeric values are equal to each other using the `==` operator.
+- Role in execution: Used in conditional or arithmetic contexts like `(( ... ))` to compare numbers and control program flow.
+
+- Example:
+```bash
+if (( 5 == 5 )); then
+    echo "They are equal"
+fi
+# Output: They are equal
+```
 
 ### Not equal to
+- Meaning: Checking if two numeric values are not equal to each other using the `!=` operator.
+- Role in execution: Used in conditional or arithmetic contexts like `(( ... ))` to compare numbers and control program flow.
+
+- Example:
+```bash
+if (( 5 != 3 )); then
+    echo "They are not equal"
+fi
+# Output: They are not equal
+```
 
 ### Less than
+- Meaning: Checking if one numeric value is strictly less than another using the `<` operator.
+- Role in execution: Used in conditional or arithmetic contexts like `(( ... ))` to compare numbers and control program flow.
+
+- Example:
+```bash
+if (( 3 < 5 )); then
+    echo "3 is less than 5"
+fi
+# Output: 3 is less than 5
+```
 
 ### Greater than
+- Meaning: Checking if one numeric value is strictly greater than another using the `>` operator.
+- Role in execution: Used in conditional or arithmetic contexts like `(( ... ))` to compare numbers and control program flow.
+
+- Example:
+```bash
+if (( 5 > 3 )); then
+    echo "5 is greater than 3"
+fi
+# Output: 5 is greater than 3
+```
 
 ### Less than or equal to
+- Meaning: Checking if one numeric value is less than or equal to another using the `<=` operator.
+- Role in execution: Used in conditional or arithmetic contexts like `(( ... ))` to compare numbers and control program flow.
+
+- Example:
+```bash
+if (( 3 <= 5 )); then
+    echo "3 is less than or equal to 5"
+fi
+# Output: 3 is less than or equal to 5
+```
 
 ### Greater than or equal to
+- Meaning: Checking if one numeric value is greater than or equal to another using the `>=` operator.
+- Role in execution: Used in conditional or arithmetic contexts like `(( ... ))` to compare numbers and control program flow.
+
+- Example:
+```bash
+if (( 5 >= 3 )); then
+    echo "5 is greater than or equal to 3"
+fi
+# Output: 5 is greater than or equal to 3
+```
 
 ---
 
 ## Logical
 
 ### AND
+- Meaning: Logical AND operator using `&&` to evaluate multiple conditions, returning true only if all individual conditions are true.
+- Role in execution: Used in conditional or arithmetic contexts like `(( ... ))` to combine expressions and control program flow.
+
+- Example:
+```bash
+if (( 5 > 3 && 10 > 8 )); then
+    echo "Both conditions are true"
+fi
+# Output: Both conditions are true
+```
 
 ### OR
+- Meaning: Logical OR operator using `||` to evaluate multiple conditions, returning true if at least one individual condition is true.
+- Role in execution: Used in conditional or arithmetic contexts like `(( ... ))` to combine expressions and control program flow.
+
+- Example:
+```bash
+if (( 5 > 3 || 10 < 2 )); then
+    echo "At least one condition is true"
+fi
+# Output: At least one condition is true
+```
 
 ### NOT
+- Meaning: Logical NOT operator using `!` to invert the truth value of a condition (turning true to false and false to true).
+- Role in execution: Used in conditional or arithmetic contexts like `(( ... ))` to negate expressions and control program flow.
+
+- Example:
+```bash
+if (( ! (5 < 3) )); then
+    echo "The condition is false, so NOT makes it true"
+fi
+# Output: The condition is false, so NOT makes it true
+```
 
 ---
 
 ## Assignment
 
 ### Basic assignment
+- Meaning: Assigning a value to a variable using the `=` operator within an arithmetic context.
+- Role in execution: Used in arithmetic contexts like `(( ... ))` to store numbers or the results of calculations into variables.
+
+- Example:
+```bash
+(( x = 10 ))
+echo "$x"
+# Output: 10
+```
 
 ### Compound assignment
+- Meaning: Modifying an existing variable's value by performing an arithmetic operation and assigning the result back in a single step (using operators like `+=`, `-=`, `*=`, `/=`, and `%=`).
+- Role in execution: Used in arithmetic contexts like `(( ... ))` to efficiently update variable values (such as adding to a counter or scaling a number).
+
+- Example:
+```bash
+x=10
+(( x += 5 ))
+echo "$x"
+# Output: 15
+```

@@ -26,6 +26,9 @@ I mainly started this project for my own personal use, but decided to make it pu
 - [`Terminal Shortcuts`](2.0-terminal-shortcuts/Terminal-Shortcuts-and-Controls.md)
 
 ## 3.0 - Operators and Bash Specific Operators
-- [`1.0 Basics`](3.0-operators-and-bash-specific-operators/1.0-basics.md)
-- [`2.0 Common Programming Operators`](3.0-operators-and-bash-specific-operators/2.0-common-programming-operators.md)
-- [`3.0 Bash Specific Operators`](3.0-operators-and-bash-specific-operators/3.0-bash-specific-operators.md)
+- [`1 Basics`](3.0-operators-and-bash-specific-operators/1.0-basics.md)
+- [`2 Common Programming Operators`](3.0-operators-and-bash-specific-operators/2.0-common-programming-operators.md)
+- [`3 Bash Specific Operators`](3.0-operators-and-bash-specific-operators/3.0-bash-specific-operators.md)
+
+## 4.0 - Bash Scripting Basics
+- [`1 Script Structure`](4.0-bash-scripting-basics/1-script-structure.md)

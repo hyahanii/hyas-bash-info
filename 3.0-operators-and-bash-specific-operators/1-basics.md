@@ -103,6 +103,14 @@ echo "$result"
 # Output: 10
 ```
 
+Logical Evaluation Example:
+```bash
+if (( ! (5 < 3) )); then
+    echo "The condition is false, so NOT makes it true"
+fi
+# Output: The condition is false, so NOT makes it true
+```
+
 ### Integer arithmetic
 - Meaning: Doing math in Bash with whole numbers only, since Bash doesn't support decimals natively.
 - Role in execution: Allows your scripts to perform calculations like addition, subtraction, or multiplication inside arithmetic constructs like `$(( ... ))` or `(( ... ))`.
