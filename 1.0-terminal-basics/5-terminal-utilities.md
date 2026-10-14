@@ -5,7 +5,6 @@
 - [`man`](#man)
 - [`history`](#history)
 - [`clear`](#clear)
-- [`echo`](#echo)
 - [`which`](#which)
 - [`command -v`](#command--v)
 
@@ -82,37 +81,6 @@ clear
 - *Ctrl + L* (Keyboard Shortcut): Clears the visible terminal screen without typing the command.
 
 Note: `clear` only clears what is visible; it does not delete command history or files.
-
-
-### echo
-- What it does: Prints text or values to the terminal output.
-- Why use it: Useful for displaying messages, testing commands, and showing variable values while debugging scripts.
-- How to use it:
-```bash
-echo "Hello, World!"
-# Output:
-# Hello, World!
-```
-
-- *echo $VAR* (Print a Variable): Displays the current value of a variable.
-Example:
-```bash
-name="Bash"
-echo $name
-# Output:
-# Bash
-```
-
-- *echo -e* (Enable Escape Sequences): Allows special characters like `\n` and `\t` to be interpreted.
-Example:
-```bash
-echo -e "Line 1\nLine 2"
-# Output:
-# Line 1
-# Line 2
-```
-
-Note: `echo` is one of the most basic debugging tools in Bash. It is often used to confirm that a script reached a certain point or to print variable values.
 
 
 ### which

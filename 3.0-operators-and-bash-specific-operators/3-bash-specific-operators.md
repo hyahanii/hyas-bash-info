@@ -130,17 +130,3 @@ if [[ $age -ge 18 && "$has_id" == "true" ]]; then
 fi
 # Output: Access granted
 ```
-
-### Combining conditions
-- Meaning: Joining multiple conditional expressions together using logical operators (`&&`, `||`) or grouping with parentheses inside conditional test constructs like `[[ ... ]]`.
-- Role in execution: Used to build complex, multi-variable decision-making logic in shell scripts.
-
-- Example:
-```bash
-age=20
-has_id="true"
-if [[ $age -ge 18 && "$has_id" == "true" ]]; then
-    echo "Access granted"
-fi
-# Output: Access granted
-```

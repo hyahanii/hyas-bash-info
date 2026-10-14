@@ -13,7 +13,15 @@
 The main reason I made this is that finding actual information on exactly how things work is painful. This repo exists so you can actually understand what commands do, see clear examples.
 I mainly started this project for my own personal use, but decided to make it public
 
-**Feedback and issue reports**: If you spot an error or have a suggestion, please open a GitHub Issue. This is a personal project, so I may not accept outside contributions or be able to respond to every report, but i will check actively for fixes on wrong/missinformation, this will probably happen once or twice as i learn some of this stuff as im writing it. You can contact me on Discord at @hyahanii or by email at hyahaniii@gmail.com for any issues aswell
+**Feedback and issue reports**: If you spot an error, find a better way to explain something, or catch duplicate text, please open a GitHub issue!
+
+Because I’m documenting this project while actively learning some of these topics myself, mistakes or copy-paste duplicates from drafting are bound to happen. As the repo grows, it gets harder for just one person to spot every single error, so any extra eyes are appreciated! I’ll still check for fixes as often as I can to keep everything accurate and clean.
+
+**Other ways to reach me:**
+Discord: @hyahanii
+Email: hyahaniii@gmail.com
+
+---
 
 ## 1.0 - Terminal Basics
 - [`1 Navigation and Directories`](1.0-terminal-basics/1-navigation-and-directories.md)
@@ -36,3 +44,5 @@ I mainly started this project for my own personal use, but decided to make it pu
 - [`3 Input and Output`](4.0-bash-scripting-basics/3-input-and-output.md)
 - [`3.1 printf`](4.0-bash-scripting-basics/3.1-printf.md)
 - [`4 arrays`](4.0-bash-scripting-basics/4-arrays.md)
+- [`5 Conditionals and Loops`](4.0-bash-scripting-basics/5-conditionals-and-loops.md)
+- [`Functions`](4.0-bash-scripting-basics/6-functions.md)

@@ -10,21 +10,35 @@
 ## Printing output
 
 ### echo
-- What it is: A built-in shell command used to print text or variables to terminal standard output, automatically appending a newline character by default.
-- Why it matters: It is the most common and straightforward way to display messages, debug variables, or output data during script execution.
-
-- Example:
+- What it does: Prints text or values to the terminal output.
+- Why use it: Useful for displaying messages, testing commands, and showing variable values while debugging scripts.
+- How to use it:
 ```bash
-# Basic text output
 echo "Hello, World!"
-
-# Printing a variable
-GREETINGS="Welcome"
-echo "$GREETINGS, user!"
-
-# Suppressing the trailing newline using -n
-echo -n "Loading... "
+# Output:
+# Hello, World!
 ```
+
+- *echo $VAR* (Print a Variable): Displays the current value of a variable.
+Example:
+```bash
+name="Bash"
+echo $name
+# Output:
+# Bash
+```
+
+- *echo -e* (Enable Escape Sequences): Allows special characters like `\n` and `\t` to be interpreted.
+Example:
+```bash
+echo -e "Line 1\nLine 2"
+# Output:
+# Line 1
+# Line 2
+```
+
+Note: `echo` is one of the most basic debugging tools in Bash. It is often used to confirm that a script reached a certain point or to print variable values.
+
 
 ## Reading input
 
@@ -35,7 +49,7 @@ echo -n "Loading... "
   - `-p prompt`: Displays a prompt string without a trailing newline before reading input.
   - `-s`: Silent mode; hides typed characters on the screen, which is essential for capturing passwords or sensitive data.
   - `-t seconds`: Sets a timeout limit, causing the read command to fail if input isn't provided in time.
-  - `-n count`: Returns immediately after reading a specific number of characters instead of waiting for enter.
+  - `-n count`: Returns immediately after resading a specific number of characters instead of waiting for enter.
   - `-a array`: Assigns each space-separated word of the input into an indexed array.
 
 - Example:

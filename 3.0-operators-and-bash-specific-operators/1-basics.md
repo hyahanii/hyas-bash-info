@@ -1,4 +1,4 @@
-# 1.0 - Basics
+# 1.0 - Terminal Basics
 
 ## Contents
 
