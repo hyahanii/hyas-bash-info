@@ -23,26 +23,3 @@ Email: hyahaniii@gmail.com
 
 ---
 
-## 1.0 - Terminal Basics
-- [`1 Navigation and Directories`](1.0-terminal-basics/1-navigation-and-directories.md)
-- [`2 File Management`](1.0-terminal-basics/2-file-management.md)
-- [`3 Reading Files`](1.0-terminal-basics/3-reading-files.md)
-- [`4 Searching and Filtering`](1.0-terminal-basics/4-searching-and-filtering.md)
-- [`5 Terminal Utilities`](1.0-terminal-basics/5-terminal-utilities.md)
-
-## 2.0 - Terminal Shortcuts
-- [`Terminal Shortcuts`](2.0-terminal-shortcuts/Terminal-Shortcuts-and-Controls.md)
-
-## 3.0 - Operators and Bash Specific Operators
-- [`1 Basics`](3.0-operators-and-bash-specific-operators/1.0-basics.md)
-- [`2 Common Programming Operators`](3.0-operators-and-bash-specific-operators/2.0-common-programming-operators.md)
-- [`3 Bash Specific Operators`](3.0-operators-and-bash-specific-operators/3.0-bash-specific-operators.md)
-
-## 4.0 - Bash Scripting Basics
-- [`1 Script Structure`](4.0-bash-scripting-basics/1-script-structure.md)
-- [`2 Variables and Output`](4.0-bash-scripting-basics/2-variables-and-parameters.md)
-- [`3 Input and Output`](4.0-bash-scripting-basics/3-input-and-output.md)
-- [`3.1 printf`](4.0-bash-scripting-basics/3.1-printf.md)
-- [`4 arrays`](4.0-bash-scripting-basics/4-arrays.md)
-- [`5 Conditionals and Loops`](4.0-bash-scripting-basics/5-conditionals-and-loops.md)
-- [`Functions`](4.0-bash-scripting-basics/6-functions.md)
