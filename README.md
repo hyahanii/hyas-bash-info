@@ -13,7 +13,7 @@
 The main reason I made this is that finding actual information on exactly how things work is painful. This repo exists so you can actually understand what commands do, see clear examples.
 I mainly started this project for my own personal use, but decided to make it public
 
-**Feedback and issue reports**: If you spot an error or have a suggestion, please open a GitHub Issue. This is a personal project, so I may not accept outside contributions or be able to respond to every report. You can also contact me on Discord at @hyahanii or by email at hyahaniii@gmail.com
+**Feedback and issue reports**: If you spot an error or have a suggestion, please open a GitHub Issue. This is a personal project, so I may not accept outside contributions or be able to respond to every report, but i will check actively for fixes on wrong/missinformation, this will probably happen once or twice as i learn some of this stuff as im writing it. You can contact me on Discord at @hyahanii or by email at hyahaniii@gmail.com for any issues aswell
 
 ## 1.0 - Terminal Basics
 - [`1 Navigation and Directories`](1.0-terminal-basics/1-navigation-and-directories.md)
