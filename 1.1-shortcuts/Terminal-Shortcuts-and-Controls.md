@@ -16,11 +16,15 @@ This document lists useful keyboard shortcuts for working in a terminal. Some sh
 - `Ctrl` means hold Control while pressing the listed key.
 - `Alt` means hold Alt while pressing the listed key. On some terminals, `Esc` followed by the key works instead.
 
+
+
 ## Controlling running commands
 
 - `Ctrl+C` — interrupt the foreground command
 - `Ctrl+Z` — suspend the foreground command
 - `Ctrl+D` — send end-of-input (EOF)
+
+
 
 ## Editing the command line
 
@@ -33,17 +37,23 @@ This document lists useful keyboard shortcuts for working in a terminal. Some sh
 - `Alt+B` — move back one word
 - `Alt+F` — move forward one word
 
+
+
 ## Moving through command history
 
 - `Up Arrow` / `Down Arrow` — move through previous commands
 - `Ctrl+R` — search command history
 - `Ctrl+G` — cancel a history search
 
+
+
 ## Completion and the terminal display
 
 - `Tab` — complete a command, filename, or path when possible
 - `Tab` twice — show possible completions when there is more than one match
 - `Ctrl+L` — clear the visible terminal screen
+
+
 
 ## Notes
 

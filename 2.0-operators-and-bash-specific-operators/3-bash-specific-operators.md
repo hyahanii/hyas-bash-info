@@ -2,19 +2,24 @@
 
 ## Contents
 
+- [`Comparing Numbers`](#comparing-numbers)
+- [`Comparing Strings`](#comparing-strings)
+
 - [`String and file tests`](#string-and-file-tests)
   - [`Checking strings`](#checking-strings)
   - [`Checking files and directories`](#checking-files-and-directories)
+
 - [`Pattern and regex`](#pattern-and-regex)
   - [`Matching patterns`](#matching-patterns)
   - [`Matching regular expressions`](#matching-regular-expressions)
+
 - [`Pipes`](#pipes)
 - [`Redirection`](#redirection)
 - [`Command chaining`](#command-chaining)
 - [`Condition combinations`](#condition-combinations)
   - [`Combining conditions`](#combining-conditions)
 
----
+
 
 ## Comparing numbers
 [[ $A -eq $B ]]  # Equal to ($A == $B)
@@ -57,7 +62,7 @@ fi
 # Output: Directory exists
 ```
 
----
+
 
 ## Pattern and regex
 
@@ -87,9 +92,17 @@ fi
 # Output: Valid email format
 ```
 
----
 
 ## Pipes
+- Meaning: Passing the standard output of one command directly as the standard input to another command using the pipe operator (`|`).
+- Role in execution: Used to chain multiple commands together, allowing data to flow seamlessly from one tool to the next without needing intermediate files.
+
+- Example:
+```bash
+echo -e "apple\nbanana\ncherry" | grep "banana"
+# Output: banana
+```
+
 
 ## Redirection
 - Meaning: Directing the input or output of a command to or from a file instead of the standard terminal streams using operators like `>`, `>>`, and `<`.
@@ -113,7 +126,7 @@ echo "Backup completed successfully"
 # Output: Backup completed successfully
 ```
 
----
+
 
 ## Condition combinations
 

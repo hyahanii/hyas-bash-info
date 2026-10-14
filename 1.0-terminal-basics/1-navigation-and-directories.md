@@ -1,16 +1,13 @@
-# 1.0 - Navigation and Directories
+# 1 - Navigation and Directories
 
 ## Contents
 
 - [`pwd`](#pwd)
 - [`ls`](#ls)
-- [`ls -la`](#detailed-listing)
-- [`cd`](#change-directory)
-- [`cd ..`](#parent-directory)
-- [`cd ~`](#home-directory)
-
-## Navigation commands
-
+- [`ls -la`](#ls--la)
+- [`cd`](#cd-dir-change-directory)
+- [`cd ..`](#cd--move-up-one-level)
+- [`cd ~`](#cd--go-to-home-directory)
 
 ### pwd
 - What it stands for: Print Working Directory
@@ -22,6 +19,7 @@
 pwd
 # Output: /home/username
 ```
+
 
 
 ### ls
@@ -36,7 +34,6 @@ ls
 ```
 
 
-# Detailed listing
 
 ### ls -la
 - What it stands for: List (with -l for Long format and -a for All files)
@@ -58,7 +55,6 @@ Note:
 - Or you can use *ls -a* to see hidden files without the long format table.
 
 
-# Change directory
 
 ### cd [dir]: Change Directory
 - What it stands for: Change Directory
@@ -75,7 +71,6 @@ pwd
 ```
 
 
-# Parent directory
 
 ### cd ..: Move Up One Level
 - What it stands for: Change Directory to Parent
@@ -92,7 +87,6 @@ pwd
 ```
 
 
-# Home directory
 
 ### cd ~: Go To Home Directory
 - What it stands for: Change Directory to Tilde (Home)

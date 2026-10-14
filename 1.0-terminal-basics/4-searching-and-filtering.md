@@ -1,4 +1,4 @@
-# 1.0 - Searching and Filtering
+# 4 - Searching and Filtering
 
 ## Contents
 
@@ -9,7 +9,7 @@
 - [`uniq`](#uniq-file-report-or-omit-repeated-lines)
 - [`cut`](#cut-file-remove-sections-from-each-line-of-files)
 
-## Searching and filtering commands
+
 
 ### grep [pattern] [file]: Global Regular Expression Print
 - What it stands for: Global Regular Expression Print
@@ -32,6 +32,7 @@ grep -i "apple" words.txt
 # apple
 # APPLE
 ```
+
 
 
 ### find [dir] [criteria]: Find Files and Directories
@@ -79,6 +80,7 @@ find . -iname "*.TXT"
 Note: *.* means "current directory", so *find .* searches from wherever you are right now.
 
 
+
 ### wc [file]: Word Count
 - What it stands for: Word Count
 - What it does: Counts the number of lines, words, and characters in a file. By default, it prints all three values for the file you pass in.
@@ -116,6 +118,7 @@ wc -c notes.txt
 ```
 
 Note: The output format is usually: lines words characters filename. So in the example above, the file has 12 lines, 45 words, and 260 characters.
+
 
 
 ### sort [file]: Sort Lines of Text Files
@@ -162,6 +165,8 @@ Note: `sort` works best on plain text files. If you want to sort a file permanen
 ```bash
 sort names.txt > sorted_names.txt
 ```
+
+
 
 ### uniq [file]: Report or Omit Repeated Lines
 - What it stands for: Unique
@@ -215,6 +220,7 @@ Note: `uniq` is most effective when used with `sort`. For example:
 sort names.txt | uniq
 ```
 This sorts the file first, then removes duplicate lines.
+
 
 
 ### cut [file]: Remove Sections from Each Line of Files

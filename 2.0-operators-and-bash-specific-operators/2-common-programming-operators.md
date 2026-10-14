@@ -1,4 +1,4 @@
-# 2.0 - Common Programming Operators
+# 2 - Common Programming Operators
 
 ## Contents
 
@@ -14,6 +14,7 @@
   - [`Bitwise Operators`](#bitwise-operators)
   - [`Bit Shifts`](#bit-shifts)
   - [`Comma Operator`](#comma-operator)
+
 - [`Comparison`](#comparison)
   - [`Equal to`](#equal-to)
   - [`Not equal to`](#not-equal-to)
@@ -21,15 +22,17 @@
   - [`Greater than`](#greater-than)
   - [`Less than or equal to`](#less-than-or-equal-to)
   - [`Greater than or equal to`](#greater-than-or-equal-to)
+
 - [`Logical`](#logical)
   - [`AND`](#and)
   - [`OR`](#or)
   - [`NOT`](#not)
+
 - [`Assignment`](#assignment)
   - [`Basic assignment`](#basic-assignment)
   - [`Compound assignment`](#compound-assignment)
 
----
+
 
 ## Arithmetic
 
@@ -53,6 +56,7 @@ echo "$sum"
 ```
 
 
+
 ### Subtraction
 - Meaning: Subtracting one numeric value from another to find the difference.
 - Role in execution: Used in arithmetic contexts like `$(( ... ))` to perform subtraction calculations on numbers or variables.
@@ -71,6 +75,7 @@ Alternatively you can do this:
 echo "$difference"
 # Output: 6
 ```
+
 
 
 ### Multiplication
@@ -93,6 +98,7 @@ echo "$product"
 ```
 
 
+
 ### Division
 - Meaning: Dividing one numeric value by another to find the quotient (note that Bash discards remainders and only keeps whole numbers).
 - Role in execution: Used in arithmetic contexts like `$(( ... ))` to perform division calculations on numbers or variables.
@@ -111,6 +117,8 @@ Alternatively you can do this:
 echo "$quotient"
 # Output: 3
 ```
+
+
 
 ### Remainder (Modulus)
 - Meaning: Dividing two numbers and returning only the remainder instead of the quotient using the `%` operator.
@@ -131,6 +139,8 @@ echo "$remainder"
 # Output: 1
 ```
 
+
+
 ### Exponentiation
 - Meaning: Raising a number to the power of another number using the `**` operator.
 - Role in execution: Used in arithmetic contexts like `$(( ... ))` to calculate exponents (such as squaring or cubing numbers).
@@ -149,6 +159,8 @@ Alternatively you can do this:
 echo "$result"
 # Output: 8
 ```
+
+
 
 ### Increment and Decrement
 - Meaning: Increasing (`++`) or decreasing (`--`) a variable's value by exactly 1.
@@ -188,6 +200,8 @@ echo "$count"
 # Output: 4
 ```
 
+
+
 ### Unary Operators
 - Meaning: Operators that act on a single operand to change its sign or state (such as unary minus `-` to make a number negative, or unary plus `+`).
 - Role in execution: Used in arithmetic contexts like `$(( ... ))` to negate values or explicitly set signs.
@@ -209,6 +223,8 @@ echo "$result"
 # Output: -5
 ```
 
+
+
 ### Bitwise Operators
 - Meaning: Operators that perform operations on the individual binary bits of integer values (such as bitwise AND `&`, bitwise OR `|`, XOR `^`, and bitwise NOT `~`).
 - Role in execution: Used in arithmetic contexts like `$(( ... ))` to manipulate flags, masks, or low-level binary data.
@@ -228,6 +244,8 @@ Alternatively you can do this:
 echo "$result"
 # Output: 1
 ```
+
+
 
 ### Bit Shifts
 - Meaning: Shifting the binary bits of a number to the left (`<<`) or right (`>>`) by a specified number of positions, effectively multiplying or dividing the number by powers of 2.
@@ -249,6 +267,8 @@ echo "$result"
 # Output: 10
 ```
 
+
+
 ### Comma Operator
 - Meaning: Allows multiple expressions to be evaluated sequentially from left to right, returning the value of the final expression as the overall result.
 - Role in execution: Used in arithmetic contexts like `$(( ... ))` to group multiple related calculations or assignments into a single statement.
@@ -268,7 +288,7 @@ echo "$result"
 # Output: 5
 ```
 
----
+
 
 ## Comparison
 
@@ -284,6 +304,8 @@ fi
 # Output: They are equal
 ```
 
+
+
 ### Not equal to
 - Meaning: Checking if two numeric values are not equal to each other using the `!=` operator.
 - Role in execution: Used in conditional or arithmetic contexts like `(( ... ))` to compare numbers and control program flow.
@@ -295,6 +317,8 @@ if (( 5 != 3 )); then
 fi
 # Output: They are not equal
 ```
+
+
 
 ### Less than
 - Meaning: Checking if one numeric value is strictly less than another using the `<` operator.
@@ -308,6 +332,8 @@ fi
 # Output: 3 is less than 5
 ```
 
+
+
 ### Greater than
 - Meaning: Checking if one numeric value is strictly greater than another using the `>` operator.
 - Role in execution: Used in conditional or arithmetic contexts like `(( ... ))` to compare numbers and control program flow.
@@ -319,6 +345,8 @@ if (( 5 > 3 )); then
 fi
 # Output: 5 is greater than 3
 ```
+
+
 
 ### Less than or equal to
 - Meaning: Checking if one numeric value is less than or equal to another using the `<=` operator.
@@ -332,6 +360,8 @@ fi
 # Output: 3 is less than or equal to 5
 ```
 
+
+
 ### Greater than or equal to
 - Meaning: Checking if one numeric value is greater than or equal to another using the `>=` operator.
 - Role in execution: Used in conditional or arithmetic contexts like `(( ... ))` to compare numbers and control program flow.
@@ -344,7 +374,7 @@ fi
 # Output: 5 is greater than or equal to 3
 ```
 
----
+
 
 ## Logical
 
@@ -360,6 +390,8 @@ fi
 # Output: Both conditions are true
 ```
 
+
+
 ### OR
 - Meaning: Logical OR operator using `||` to evaluate multiple conditions, returning true if at least one individual condition is true.
 - Role in execution: Used in conditional or arithmetic contexts like `(( ... ))` to combine expressions and control program flow.
@@ -371,6 +403,8 @@ if (( 5 > 3 || 10 < 2 )); then
 fi
 # Output: At least one condition is true
 ```
+
+
 
 ### NOT
 - Meaning: Logical NOT operator using `!` to invert the truth value of a condition (turning true to false and false to true).
@@ -384,7 +418,7 @@ fi
 # Output: The condition is false, so NOT makes it true
 ```
 
----
+
 
 ## Assignment
 
@@ -398,6 +432,8 @@ fi
 echo "$x"
 # Output: 10
 ```
+
+
 
 ### Compound assignment
 - Meaning: Modifying an existing variable's value by performing an arithmetic operation and assigning the result back in a single step (using operators like `+=`, `-=`, `*=`, `/=`, and `%=`).

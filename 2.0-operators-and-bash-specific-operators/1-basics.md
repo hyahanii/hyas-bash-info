@@ -1,26 +1,22 @@
-# 1.0 - Terminal Basics
+# 1 - Basics
 
 ## Contents
 
-- [`What operators are`](#what-operators-are)
   - [`Operator`](#operator)
   - [`Operand`](#operand)
   - [`Value`](#value)
   - [`Expression`](#expression)
   - [`Result`](#result)
-- [`Arithmetic contexts`](#arithmetic-contexts)
+
   - [`Arithmetic evaluation`](#arithmetic-evaluation)
   - [`Integer arithmetic`](#integer-arithmetic)
-- [`Comparison contexts`](#comparison-contexts)
+
   - [`Numeric comparisons`](#numeric-comparisons)
   - [`String comparisons`](#string-comparisons)
-- [`Exit Status and Control`](#exit-status-and-control)
+
   - [`Exit status`](#exit-status)
   - [`Exit status control`](#exit-status-control)
 
----
-
-## What operators are
 
 
 ### Operator
@@ -36,6 +32,7 @@ echo "$((4 + 5))"
 ```
 
 
+
 ### Operand
 - Meaning: An operand is a value that an operator acts on.
 - Role in an expression: In `4 + 5`, `4` and `5` are the operands that the `+` operator adds.
@@ -47,6 +44,7 @@ echo "$((4 + 5))"
 echo "$((4 + 5))"
 # Output: 9
 ```
+
 
 
 ### Value
@@ -62,6 +60,7 @@ echo "$((4 + 5))"
 ```
 
 
+
 ### Expression
 - Meaning: An expression is a combination of values and operators that represents a calculation or condition.
 - Role in an expression: Bash evaluates the expression to determine its result.
@@ -73,6 +72,7 @@ echo "$((4 + 5))"
 echo "$((4 + 5))"
 # Output: 9
 ```
+
 
 
 ### Result
@@ -88,9 +88,7 @@ echo "$((4 + 5))"
 
 ```
 
----
 
-## Arithmetic contexts
 
 ### Arithmetic evaluation
 - Meaning: The process where Bash calculates the result of a math expression rather than treating it as plain text.
@@ -111,6 +109,8 @@ fi
 # Output: The condition is false, so NOT makes it true
 ```
 
+
+
 ### Integer arithmetic
 - Meaning: Doing math in Bash with whole numbers only, since Bash doesn't support decimals natively.
 - Role in execution: Allows your scripts to perform calculations like addition, subtraction, or multiplication inside arithmetic constructs like `$(( ... ))` or `(( ... ))`.
@@ -121,9 +121,7 @@ echo "$(( 10 / 3 ))"
 # Output: 3
 ```
 
----
 
-## Comparison contexts
 
 ### Numeric comparisons
 - Meaning: Checking how numbers relate to each other, such as testing if one number is greater than, less than, or equal to another.
@@ -138,6 +136,8 @@ fi
 # Output: Number is greater than 5.
 ```
 
+
+
 ### String comparisons
 - Meaning: Checking how text values relate to each other, such as testing if two strings match, differ, or are empty.
 - Role in execution: Used inside conditional tests so your script can make decisions based on text content, returning a success or failure exit status.
@@ -151,9 +151,7 @@ fi
 # Output: Hello, Alice!
 ```
 
----
 
-## Exit status and control
 
 ### Exit status
 - Meaning: An exit status is a numeric code returned by a completed command to indicate whether it succeeded or failed (`0` for success, non-zero for failure).
@@ -169,6 +167,7 @@ false
 echo "$?"
 # Output: 1
 ```
+
 
 
 ### Exit status control

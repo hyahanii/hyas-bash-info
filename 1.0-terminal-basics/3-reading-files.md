@@ -1,4 +1,4 @@
-# 1.0 - Reading Files
+# 3 - Reading Files
 
 ## Contents
 
@@ -7,7 +7,6 @@
 - [`head`](#head-file-display-beginning-of-file)
 - [`tail`](#tail-file-display-end-of-file)
 
-## File-reading commands
 
 
 ### cat [file]: Concatenate and Display
@@ -34,6 +33,7 @@ cat -n words.txt
 ```
 
 
+
 ### less [file]: Interactive File Viewer
 - What it stands for: Interactive File Viewer
 - What it does: Opens a file in a scrollable, full screen reader view that lets you navigate forward and backward through large text files.
@@ -48,8 +48,9 @@ less large_log.txt
   - *Up / Down Arrows* or *j / k*: scroll line by line
   - *Spacebar* or *Page Down*: Scroll forward one full page.
   - *b*: Scroll backward one full page.
-  - /search_term: Searches forward for a specific word.
+  - */search_term*: Searches forward for a specific word.
   - *q*: Quit *less* and return to your terminal.
+
 
 
 ### head [file]: Display Beginning of File
@@ -70,10 +71,13 @@ head -n 50 server.log
 # Output: Prints the first 50 lines of server.log
 ```
 
+
+
 ### tail [file]: Display End of File
 - What it stands for: Tail
 - What it does: Outputs the last few lines of a file (10 lines by default).
 - Why use it: Useful for checking the most recent entries at the end of a log or output file. 
+
 - How to use it:
 ```bash
 tail server.log

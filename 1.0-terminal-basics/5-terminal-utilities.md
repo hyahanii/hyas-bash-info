@@ -1,4 +1,4 @@
-# 1.0 - Terminal Utilities
+# 5 - Terminal Utilities
 
 ## Contents
 
@@ -8,7 +8,7 @@
 - [`which`](#which)
 - [`command -v`](#command--v)
 
-## Terminal utilities
+
 
 ### man
 - What it stands for: Manual
@@ -42,6 +42,7 @@ man -k network
 Note: If you are unsure what a command does, `man` is usually the first place to check before guessing.
 
 
+
 ### history
 - What it does: Displays commands you have entered in the current Bash session, along with a number for each command.
 - Why use it: Useful when you want to find a command you used earlier so you can review or run it again.
@@ -70,6 +71,7 @@ Example:
 Note: Bash may save command history between sessions, depending on its configuration.
 
 
+
 ### clear
 - What it does: Clears the visible text from the terminal window, leaving you with a fresh screen.
 - Why use it: Useful when the terminal has become cluttered and you want to make new output easier to read.
@@ -81,6 +83,7 @@ clear
 - *Ctrl + L* (Keyboard Shortcut): Clears the visible terminal screen without typing the command.
 
 Note: `clear` only clears what is visible; it does not delete command history or files.
+
 
 
 ### which
@@ -100,6 +103,7 @@ which bash
 ```
 
 Note: `which` may not find shell built-ins such as `cd`. Use `command -v` to check for those as well.
+
 
 
 ### command -v

@@ -1,4 +1,4 @@
-# 1.0 - File Management
+# 2 - File Management
 
 ## Contents
 
@@ -8,7 +8,7 @@
 - [`mv`](#mv-source-dest-move-or-rename-file-or-directory)
 - [`rm`](#rm-file-remove-file)
 
-## File and directory commands
+
 
 ### mkdir [dir]: Make Directory
 - What it stands for: Make Directory
@@ -31,6 +31,7 @@ mkdir -p projects/bash/scripts
 ```
 
 
+
 ### touch [file]: Touch (Create Empty File)
 - What it stands for: Touch
 - What it does: Creates a new, empty file with the specified name, or updates the timestamp of an existing file.
@@ -47,6 +48,7 @@ touch words.txt
 ls
 # Output: projects script.sh words.txt
 ```
+
 
 
 ### cp [source] [dest]: Copy File or Directory
@@ -72,6 +74,7 @@ cp -r projects/ backup_projects/
 Note: If the destination is an existing file, `cp` overwrites it without asking. Use `cp -i` to be prompted before overwriting. If the destination is an existing directory, the copied file is placed inside it.
 
 
+
 ### mv [source] [dest]: Move or Rename File or Directory
 - What it stands for: Move
 - What it does: Moves a file or directory from one location to another, or renames it if the destination name is different within the same location.
@@ -89,9 +92,10 @@ Example:
 ```bash
 ls
 # Output: projects backup.sh new_script.sh words.txt
-mv -i script.sh backup.sh
+mv -i new_script.sh backup.sh
 # Output: overwrite 'backup.sh'? (y/n)
 ```
+
 
 
 ### rm [file]: Remove File
