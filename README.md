@@ -32,3 +32,7 @@ I mainly started this project for my own personal use, but decided to make it pu
 
 ## 4.0 - Bash Scripting Basics
 - [`1 Script Structure`](4.0-bash-scripting-basics/1-script-structure.md)
+- [`2 Variables and Output`](4.0-bash-scripting-basics/2-variables-and-parameters.md)
+- [`3 Input and Output`](4.0-bash-scripting-basics/3-input-and-output.md)
+- [`3.1 printf`](4.0-bash-scripting-basics/3.1-printf.md)
+- [`4 arrays`](4.0-bash-scripting-basics/4-arrays.md)
