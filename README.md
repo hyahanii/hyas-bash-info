@@ -40,5 +40,3 @@ Email: hyahaniii@gmail.com
 
 ## 3.0 Bash Scripting Basics
 - [`1 Script Structure`](3.0-bash-scripting-basics/1-script-structure.md)
-
-eeea
