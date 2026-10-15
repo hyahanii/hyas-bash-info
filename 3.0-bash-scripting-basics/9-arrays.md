@@ -35,3 +35,36 @@ for ITEM in "${FRUITS[@]}"; do
     echo "Current item: $ITEM"
 done
 ```
+
+## Adding Elements to an Array
+
+You can add new items to an existing array dynamically using the `+=` assignment operator combined with parentheses:
+
+```bash
+# Initializing an array
+FRUITS=(apple banana)
+
+# Adding a single item to the end of the array
+FRUITS+=(cherry)
+
+# Adding multiple items at once
+FRUITS+=(date elderberry)
+
+echo "${FRUITS[@]}"  # Output: apple banana cherry date elderberry
+```
+
+You can combine the `read` command with the array assignment operator (`+=`) to let users dynamically add items to an array at runtime:
+
+```bash
+# Initialize an empty array for our tasks
+TASKS=()
+
+# Prompt the user to input data and store it in a variable
+read -p "Enter a new task: " new_task
+
+# Add the variable's value to the array using double quotes for safety
+TASKS+=("$new_task")
+
+# Verify it was added
+echo "Current tasks: ${TASKS[@]}"
+```
