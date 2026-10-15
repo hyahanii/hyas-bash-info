@@ -48,3 +48,7 @@ Email: hyahaniii@gmail.com
 - [`2.1 printf`](3.0-bash-scripting-basics/2.1-printf.md)
 - [`3 Comments`](3.0-bash-scripting-basics/3-comments.md)
 - [`4 Variables and Assignment`](3.0-bash-scripting-basics/4-variables-and-assignment.md)
+- [`5 User Input`](3.0-bash-scripting-basics/5-user-input.md)
+- [`6 If Statements`](3.0-bash-scripting-basics/6-if-statements.md)
+- [`7 Loops`](3.0-bash-scripting-basics/7-loops.md)
+- [`8 Functions`](3.0-bash-scripting-basics/8-functions.md)
