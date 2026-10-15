@@ -52,3 +52,4 @@ Email: hyahaniii@gmail.com
 - [`6 If Statements`](3.0-bash-scripting-basics/6-if-statements.md)
 - [`7 Loops`](3.0-bash-scripting-basics/7-loops.md)
 - [`8 Functions`](3.0-bash-scripting-basics/8-functions.md)
+- [`9 Arrays`](3.0-bash-scripting-basics/9-arrays.md)
