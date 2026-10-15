@@ -47,3 +47,4 @@ Email: hyahaniii@gmail.com
 - [`2 echo`](3.0-bash-scripting-basics/2-echo.md)
 - [`2.1 printf`](3.0-bash-scripting-basics/2.1-printf.md)
 - [`3 Comments`](3.0-bash-scripting-basics/3-comments.md)
+- [`4 Variables and Assignment`](3.0-bash-scripting-basics/4-variables-and-assignment.md)
