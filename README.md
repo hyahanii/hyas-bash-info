@@ -25,7 +25,8 @@ Because I’m documenting this project while actively learning some of these top
 Discord: @hyahanii
 Email: hyahaniii@gmail.com
 
----
+## Tutorial
+[`Introduction to this tutorial`](Tutorial/introduction-to-this-tutorial.md)
 
 ## 1.0 - Terminal Basics
 - [`1 Navigation and Directories`](1.0-terminal-basics/1-navigation-and-directories.md)
@@ -53,3 +54,10 @@ Email: hyahaniii@gmail.com
 - [`7 Loops`](3.0-bash-scripting-basics/7-loops.md)
 - [`8 Functions`](3.0-bash-scripting-basics/8-functions.md)
 - [`9 Arrays`](3.0-bash-scripting-basics/9-arrays.md)
+
+## 4.0 Randomness in Bash
+- [`1 $RANDOM`](4.0-randomness-in-bash/1-$RANDOM.md)
+- [`2 /dev/random`](4.0-randomness-in-bash/2-dev-random.md)
+- [`3 /dev/urandom`](4.0-randomness-in-bash/3-dev-urandom.md)
+- [`4 OpenSSL Rand`](4.0-randomness-in-bash/4-openssl-rand.md)
+- [`5 Commands`](4.0-randomness-in-bash/5-commands.md)
