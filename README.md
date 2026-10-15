@@ -44,3 +44,6 @@ Email: hyahaniii@gmail.com
 
 ## 3.0 Bash Scripting Basics
 - [`1 Script Structure`](3.0-bash-scripting-basics/1-script-structure.md)
+- [`2 echo`](3.0-bash-scripting-basics/2-echo.md)
+- [`2.1 printf`](3.0-bash-scripting-basics/2.1-printf.md)
+- [`3 Comments`](3.0-bash-scripting-basics/3-comments.md)
