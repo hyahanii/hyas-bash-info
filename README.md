@@ -43,6 +43,9 @@ Email: hyahaniii@gmail.com
 - [`2 Common Programming Operators`](2.0-operators-and-bash-specific-operators/2-common-programming-operators.md)
 - [`3 Bash specific Operators`](2.0-operators-and-bash-specific-operators/3-bash-specific-operators.md)
 
+## 2.1 Positinals
+- [`1 Positinal Parameters`](2.1-positinals/1-positinal-parameters.md)
+
 ## 3.0 Bash Scripting Basics
 - [`1 Script Structure`](3.0-bash-scripting-basics/1-script-structure.md)
 - [`2 echo`](3.0-bash-scripting-basics/2-echo.md)
