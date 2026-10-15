@@ -13,9 +13,13 @@
 The main reason I made this is that finding actual information on exactly how things work is painful. This repo exists so you can actually understand what commands do, see clear examples.
 I mainly started this project for my own personal use, but decided to make it public
 
+
+
 **Feedback and issue reports**: If you spot an error, find a better way to explain something, or catch duplicate text, please open a GitHub issue!
 
 Because I’m documenting this project while actively learning some of these topics myself, mistakes or copy-paste duplicates from drafting are bound to happen. As the repo grows, it gets harder for just one person to spot every single error, so any extra eyes are appreciated! I’ll still check for fixes as often as I can to keep everything accurate and clean.
+
+**Do keep in mind** I'm just one person doing this. Keeping everything consistent over time gets pretty tough, so I do use AI to help out. Just to be clear: I don't use it to generate content or do research, I do all of that myself. I mostly just rely on AI for help to catch spelling mistakes and help fix inconsistencies between pages as doing that alone gets hard to do, or im just autistic and cant keep consistent myself.
 
 **Other ways to reach me:**
 Discord: @hyahanii
