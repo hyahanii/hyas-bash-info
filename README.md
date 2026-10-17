@@ -64,3 +64,6 @@ Email: hyahaniii@gmail.com
 - [`3 /dev/urandom`](4.0-randomness-in-bash/3-dev-urandom.md)
 - [`4 OpenSSL Rand`](4.0-randomness-in-bash/4-openssl-rand.md)
 - [`5 Commands`](4.0-randomness-in-bash/5-commands.md)
+
+## External tools
+- [`inotifywait-tools`](external-tools/inotifywait-tools.md)
